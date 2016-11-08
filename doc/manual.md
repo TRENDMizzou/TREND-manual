@@ -323,21 +323,19 @@
     `-m`  turns on normalization of the `N` principle components plotted using 
     the `-n` option.  There are several modes of normalization to choose among;
     see the table below for the choices. When `-m` option is turned on, the 
-    normalized PC values will be saved to `normalizedPC.csv` file.
-
-    | Normalization mode | meaning |
-    | --- | --- |
-    | 0 | No normalization on PC values |
-    | 1 | Normalize all PC values to 1.0, with PC1 increasing \(typical for a ligand binding isotherm\) |
-    | 2 | Normalize all PC values to 1.0, regardless of the direction |
-    | 3 | Normalize PC1 to 1.0 and set it to increase. Normalize all other components to PC1 |
-    | 4 | Normalize PC1 to 1.0 without changing its orientation. Normalize all other components to PC1 |
-    | 5\* | Normalize PC values to the sum of PC1+PC2 |
-    | 6$ | Normalize 2 phase binding isotherms into monotonic increasing, reverse turning point |
-
-    \* This mode was used for two sequential binding events
-
-    $  This option might be used for binding isotherms of titrations where 
+    normalized PC values will be saved to `normalizedPC.csv` file.  
+   
+| Normalization mode | meaning |
+| -- | -- |
+| 0 | No normalization on PC values |
+| 1 | Normalize all PC values to 1.0, with PC1 increasing (typical for a ligand binding isotherm) |
+| 2 | Normalize all PC values to 1.0, regardless of the direction |
+| 3 | Normalize PC1 to 1.0 and set it to increase. Normalize all other components to PC1 |
+| 4 | Normalize PC1 to 1.0 without changing its orientation. Normalize all other components to PC1 |
+| 5\* | Normalize PC values to the sum of PC1+PC2 |
+| 6<sup>$</sup> | Normalize 2 phase binding isotherms into monotonic increasing, reverse turning point |
+\* This mode was used for two sequential binding events
+$  This option might be used for binding isotherms of titrations where 
     spectra in the middle of the titration are severely perturbed and the 
     trajectory of change is V-shaped.
 
@@ -400,16 +398,15 @@
     Background:  `trendmain.exe` reorganizes the measurements listed in 
     `file.index` as a large 2D matrix, filters them, and scales them for PCA. 
     The `-m` option specifies which stage of the process should be reconstructed. 
-    `-m` specifies which matrix will be reconstructed. The choices are:
-
-    | matrix mode | meaning |
-    | --- | --- |
-    | 1 | This recovers the state right before doing PCA. The large 2D matrix is row \(column\) scaled, with unchanged rows and noisy regions filtered out |
-    | 2 | This differs from matrix mode 1 in that the rows \(columns\) are unscaled |
-    | 3 | This option also recovers the filtered, unchanged rows from matrix mode 2 |
-    | 4\* | This option differs from matrix mode 3 in also recovering the low intensity regions filtered out from being below the threshold |
-
-    \* mode 4 is for **Fourier-Transformed 2D NMR spectra** where `-r` option 
+    `-m` specifies which matrix will be reconstructed. The choices are:  
+    
+| matrix mode | meaning |
+| -- | -- |
+| 1 | This recovers the state right before doing PCA. The large 2D matrix is row \(column\) scaled, with unchanged rows and noisy regions filtered out |
+| 2 | This differs from matrix mode 1 in that the rows \(columns\) are unscaled |
+| 3 | This option also recovers the filtered, unchanged rows from matrix mode 2 |
+| 4\* | This option differs from matrix mode 3 in also recovering the low intensity regions filtered out from being below the threshold |
+\* mode 4 is for **Fourier-Transformed 2D NMR spectra** where `-r` option 
     was used in `trendmain.exe` to set the threshold for filtering low intensity
     regions.
 
