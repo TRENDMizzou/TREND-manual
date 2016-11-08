@@ -215,16 +215,20 @@
                                 <h3 id="main-script---obtain-principal-components-from-a-series-of-2d-measurements">Main Script - Obtain Principal Components from a series of 2D Measurements</h3>
 <ul>
 <li><h4 id="both-gui-graphic-user-interface-and-cli-command-line-interface-programs">Both GUI (Graphic User Interface) and CLI (Command Line Interface) programs</h4>
-GUI: <code>trendmaingui.exe</code> in Windows and Linux, <code>trendmaingui.app</code> in OS X<br>CLI: <code>trendmain.exe</code> on all platforms  </li>
+<p>GUI: <code>trendmaingui.exe</code> in Windows and Linux, <code>trendmaingui.app</code> in OS X</p>
+<p>CLI: <code>trendmain.exe</code> on all platforms</p>
+</li>
 <li><h4 id="synopsis">Synopsis</h4>
-<code>trendmain.exe -t [ucsf/fid/ft2/png/movie/txt/sparky/csv/excel/&#x2026;] -f [file index]
+<p><code>trendmain.exe -t [ucsf/fid/ft2/png/movie/txt/sparky/csv/excel/&#x2026;] -f [file index]
 -r [threshold] -o [output prefix name] -s [scaling methods] [-x [xaxis file]] [-u [Unit]]
-[--report]</code>  </li>
+[--report]</code></p>
+</li>
 <li><h4 id="description">Description</h4>
-<code>trendmain.exe</code> reads a series of NMR spectra, FIDs, png images, the 
+<p><code>trendmain.exe</code> reads a series of NMR spectra, FIDs, png images, the 
 Joint Committee on Atomic and Molecular Physical data - Data eXchange 
 (JCAMP-DX) format, plain text files, comma-separated (CSV) or Excel 
-spreadsheets listed in the index file.<br><code>trendmain.exe</code> also reads and process single file, including movie, CSV or 
+spreadsheets listed in the index file.</p>
+<p><code>trendmain.exe</code> also reads and process single file, including movie, CSV or 
 Excel spreadsheet, or text file.  TREND preprocesses them, applies singular 
 value decomposition to provide U, s, and V matrices (Xu and Van Doren, 
 submitted). Its normal mode is to provide principal components (PCs) from the 
@@ -232,13 +236,17 @@ first few rows of the V matrix. TREND also has options to perform PCA
 reconstructions of the original data series or to perform independent components
 analysis. s, V, and normalized PC1 values are output as text files in the names
 of <code>prefix-s.txt</code>, <code>prefix-vt.txt</code>, and <code>prefix-pc1.txt</code>, which reports the binding 
-isotherm. Additional PCs can be requested.  </li>
+isotherm. Additional PCs can be requested.</p>
+</li>
 <li><h4 id="typical-usage-with-nmr-spectra">Typical usage with NMR spectra:</h4>
-<code>trendmain.exe -t ucsf -f file.index -r auto -o outfile -s auto --report</code></li>
+<p><code>trendmain.exe -t ucsf -f file.index -r auto -o outfile -s auto --report</code></p>
+</li>
 <li><h4 id="options">Options</h4>
 <ul>
-<li><code>-t [ucsf/fid/ft2/png/movie/txt/complextxt/csv/complexcsv/singlematrix]</code><br><code>-t</code> specifies the input file format, the default format is .ucsf for NMR 
-spectra. The options for input file formats are:  <ul>
+<li><p><code>-t [ucsf/fid/ft2/png/movie/txt/complextxt/csv/complexcsv/singlematrix]</code></p>
+<p><code>-t</code> specifies the input file format, the default format is .ucsf for NMR 
+spectra. The options for input file formats are:</p>
+<ul>
 <li><strong>ucsf</strong> Sparky ucsf format (default)  </li>
 <li><strong>fid</strong> NMRPipe fid format  </li>
 <li><strong>ft2</strong> NMRPipe ft2 format  </li>
@@ -312,7 +320,9 @@ and <a href="http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/index.html" tar
 for details of JCAMP-DX formats.   </li>
 </ul>
 </li>
-<li><code>-f [fileindex/filename]</code><br><code>-f</code> reads file index and is required  <ul>
+<li><p><code>-f [fileindex/filename]</code></p>
+<p><code>-f</code> reads file index and is required</p>
+<ul>
 <li><code>[fileindex]</code> is a text format index referring to the  series of NMR 
 spectra, images, lists, or directories (for Bruker Topspin and 
 Agilent VnmrJ data). The default file index name is <code>file.index</code>.
@@ -325,14 +335,16 @@ path, which is shown in the <code>UCSF</code> example. This &quot;directory list
 can be used for both <strong>brukerfid</strong> and <strong>brukerspectra</strong>. For 
 <strong>brukerfid</strong> data, TREND will read <code>fid</code> or <code>ser</code> data from the 
 listed directories. For <strong>brukerspectra</strong> data, TREND will read 
-<code>1r</code> or <code>2rr</code> files from the <code>pdata\1\</code> subdirectorires. Therefore, 
+<code>1r</code> or <code>2rr</code> files from the <code>pdata1</code> subdirectorires. Therefore, 
 the processing number must always be set as <code>1</code>.<br><img src="https://bytebucket.org/chia_hsu/trend/raw/a6b53994c9d44faaff51209d84ba153c3f7805e6/docs/png/png_manual/bruker-dir-index.png?token=c92c125dee2f271e853a31a14eefe9c72ed02195" alt="dir.index.png"><br><code>file.index</code> for Agilent VnmrJ could be used in a simmilar manner, 
 except its spectra are saved in the <code>datdir</code> subdirectories.   </li>
 <li>[filename] can be the name of a singlematrix data set or a movie file 
 for processing.  </li>
 </ul>
 </li>
-<li><code>-s [none/noscaling/auto/pareto/]</code><br>  <code>-s</code> specifies scaling method applied on rows of the data matrix.  <ul>
+<li><p><code>-s [none/noscaling/auto/pareto/]</code></p>
+<p>  <code>-s</code> specifies scaling method applied on rows of the data matrix.</p>
+<ul>
 <li><strong>none</strong> means skip centering and scaling of the rows of the data 
 matrix.  </li>
 <li><strong>noscaling</strong> means do data centering without scaling. It should 
@@ -344,14 +356,16 @@ spectra in fast and slow exchange regimes.  </li>
 peaks but enhances the low, broader peaks. It is recommended for NMR 
 spectra in intermediate exchange.  </li>
 <li>Definitions of the scaling methods are given in: <em>J. BMC Genomics 2006, 
-7, 142</em>. Other scaling options mentioned in this paper, such as <strong>vast</strong>
+7, 142<em>. Other scaling options mentioned in this paper, such as __</em></em>vast__
 scaling, <strong>range</strong> scaling, <strong>level</strong> scaling are also provided.  </li>
 </ul>
 </li>
-<li><code>-r [auto/1e5/3T/5t]</code><br><code>-r</code> sets the threshold for filtering low intensity regions. The threshold 
+<li><p><code>-r [auto/1e5/3T/5t]</code></p>
+<p><code>-r</code> sets the threshold for filtering low intensity regions. The threshold 
 is meaningful when processing  2D NMR spectra (ucsf, ft2), but not for FIDs
 or images in png format. There are three ways to set the threshold: auto, 
-absolute, and manual (set the number of times the noise level).  <ul>
+absolute, and manual (set the number of times the noise level).</p>
+<ul>
 <li><strong>auto</strong> In <strong>auto</strong> mode the program determines noise from the first 
 spectrum and set threshold as 4 times of the noise level for autoscaling
 and 0.5 times the noise level for Pareto scaling.  </li>
@@ -364,34 +378,40 @@ noise level of the first spectrum. In this mode threshold is set as 3 or
 7T) is the recommended range for NMR spectra.  </li>
 </ul>
 </li>
-<li><code>-o [output prefix name]</code><br><code>-o</code> specifies the prefix of output files <code>prefix-s.txt</code>, <code>prefix-vt.txt</code>, 
+<li><p><code>-o [output prefix name]</code></p>
+<p><code>-o</code> specifies the prefix of output files <code>prefix-s.txt</code>, <code>prefix-vt.txt</code>, 
 <code>prefix-pc.txt</code>, and <code>prefix-PC1.txt</code> from PCA. <code>prefix-pc.txt</code> reports all
-principle components as successive vertical columns. <strong><code>prefix-PC1.txt</code></strong> 
+principle components as successive vertical columns. <code>prefix-PC1.txt</code> 
 reports the first principal component as a single vertical column, which in
-a titration is the binding isotherm.<br>For example, the option <code>-o test</code> generates output files named as 
-<code>test-s.txt</code>, <code>test-vt.txt</code>, <code>test-PC.txt</code>, <code>test-PC1.txt</code><br><code>prefix-s.txt</code> and <code>prefix-vt.txt</code> save S and VT matrices in the SVD 
-calculation. U matrix is by default omitted because its usually big size.<br>When ICA is used instead of PCA (<code>-i</code> option is on), the prefix includes 
+a titration is the binding isotherm.</p>
+<p>For example, the option <code>-o test</code> generates output files named as 
+<code>test-s.txt</code>, <code>test-vt.txt</code>, <code>test-PC.txt</code>, <code>test-PC1.txt</code></p>
+<p><code>prefix-s.txt</code> and <code>prefix-vt.txt</code> save S and VT matrices in the SVD 
+calculation. U matrix is by default omitted because its usually big size.</p>
+<p>When ICA is used instead of PCA (<code>-i</code> option is on), the prefix includes 
 <code>prefix-vt.txt</code>, which is unmixing matrix, and <code>prefix-IC.txt</code>, which reports
-normalized independent components as successive vertical columns.  </li>
-<li><code>--csv</code> 
+normalized independent components as successive vertical columns.</p>
+</li>
+<li><p><code>--csv</code> 
 When <code>--csv</code> is turned on, data in <code>prefix-s.txt</code>, <code>prefix-pc.txt</code>, 
 <code>prefix-PC1.txt</code>, or <code>prefix-IC.txt</code> are generated as CSV files, which can 
 be read by software such as Excel or OpenOffice. The corresponding file 
 names are <code>prefix-s.csv</code>, <code>prefix-pc.csv</code>, <code>prefix-PC1.csv</code>, <code>prefix-IC.csv</code>.
 In csv files (except <code>prefix-s.csv</code>), data is organized as sucessive 
 vertical columns, where the first column represents component number. A 
-table header is added, such as <code># Component, PC1, PC2, PC3 ...</code>.  </li>
+table header is added, such as <code># Component, PC1, PC2, PC3 ...</code>.  </p>
+</li>
 <li><code>-b</code><br>Traditional uniform binning is applied for NMR data when <code>-b</code> option is 
 turned on, it does not improve accuracy but may be useful when the input 
 dataset is too large. By default <code>-b</code> option is <code>off</code>. <code>bintimes</code> option 
 needs to be set in this condition.  </li>
 <li><code>--bintimes [binning time]</code><br>Number of points to be integrated and merged together into a single point. 
-The default is 8. For example, if the size of a 2D spectra is 1024<em>2048, 
+The default is 8. For example, if the size of a 2D spectra is 1024*2048, 
 setting <code>--bintimes 8</code> causes size of binned spectra to become 
-1024/8 </em> 2048/8 = 128 * 256  </li>
+1024/8 <em> 2048/8 = 128 </em> 256  </li>
 <li><code>--compress [compress factor]</code><br>When processing <strong>movie</strong> the video can be resized by [compress factor] to 
 reduce computational cost. For example, 0.8 means the video size
-will be resized to 80%. [compress factor] can be cho <a href=""></a> sen from the interval 
+will be resized to 80%. [compress factor] can be cho  sen from the interval 
 (0, 1.0]. By default [compress factor] is set as 1.0, which means use all 
 the data, i.e. don&apos;t compress the data.</li>
 <li><code>--sparsity [sparsity factor]</code><br>This option controls skipping frames of the input video file by picking up 
@@ -444,14 +464,18 @@ plotting of principal or independent components display, please use
 <h3 id="plotting-script----display-the-principal-components-identified-by-the-main-script">Plotting script -- display the principal components identified by the main script</h3>
 <ul>
 <li><h4 id="gui-and-cli-programs">GUI and CLI programs</h4>
-GUI: <code>trendplotgui.exe</code> in Windows and Linux, <code>trendplotgui.app</code> in OS X<br>CLI: <code>trendplot.exe</code> in all platforms  </li>
+<p>GUI: <code>trendplotgui.exe</code> in Windows and Linux, <code>trendplotgui.app</code> in OS X</p>
+<p>CLI: <code>trendplot.exe</code> in all platforms</p>
+</li>
 <li><h4 id="synopsis">Synopsis</h4>
-<code>trendplot.exe [-r] [-f] [prefix] [-x [xaxisfile]] [-u [Unit]] [-n [the first N components]]
-[-p] [-e] -m [0/1/2/3/4/5]] --plot</code></li>
+<p><code>trendplot.exe [-r] [-f] [prefix] [-x [xaxisfile]] [-u [Unit]] [-n [the first N components]]
+[-p] [-e] -m [0/1/2/3/4/5]] --plot</code></p>
+</li>
 <li><h4 id="description">Description</h4>
-<code>trendplot.exe</code> plots the output of <code>trendmain.exe</code>. It is normally used to plot 
+<p><code>trendplot.exe</code> plots the output of <code>trendmain.exe</code>. It is normally used to plot 
 first principal component (PC1) or n principal components. It can also graph a 
-scree plot of the sizes of the PCs. It uses matplotlib.  </li>
+scree plot of the sizes of the PCs. It uses matplotlib.</p>
+</li>
 <li><h4 id="options">Options</h4>
 <ul>
 <li><code>-r</code><br><code>-r</code> reads all arguments used by <code>trendmain.exe</code>. Therefore when <code>-r</code> is used
@@ -468,48 +492,90 @@ example, <code>-n 3 --single</code> plots the third principal component only.  <
 <li><code>-p</code><br><code>-p</code> plots PC1 values with normalization. This is normally the most 
 important trend of change in an experiment. It is used without argument.  </li>
 <li><code>-e</code><br><code>-e</code> plots the scree plot, i.e. the size of each of the principal components   </li>
-<li><p><code>-m [0/1/2/3/4/5]</code><br><code>-m</code>  turns on normalization of the <code>N</code> principle components plotted using 
+<li><p><code>-m [0/1/2/3/4/5]</code></p>
+<p><code>-m</code>  turns on normalization of the <code>N</code> principle components plotted using 
 the <code>-n</code> option.  There are several modes of normalization to choose among;
 see the table below for the choices. When <code>-m</code> option is turned on, the 
 normalized PC values will be saved to <code>normalizedPC.csv</code> file.  </p>
-<p>Normalization mode|meaning<br>-----------|-------<br>0    | No normalization on PC values
-1    | Normalize all PC values to 1.0, with PC1 increasing (typical for a ligand binding isotherm)
-2    | Normalize all PC values to 1.0, regardless of the direction
-3    | Normalize PC1 to 1.0 and set it to increase. Normalize all other components to PC1
-4    | Normalize PC1 to 1.0 without changing its orientation. Normalize all other components to PC1
-5*   | Normalize PC values to the sum of PC1+PC2
-6$   | Normalize 2 phase binding isotherms into monotonic increasing, reverse turning point  </p>
-<p>* This mode was used for two sequential binding events<br>$  This option might be used for binding isotherms of titrations where 
-spectra in the middle of the titration are severely perturbed and the 
-trajectory of change is V-shaped.  </p>
 </li>
-<li><p><code>--biplot</code><br>This option shows the &quot;bi-plot&quot; of the first two principal components in 
-matrix VT. (A bi-plot is the equivalent of a score plot in the nonmenclature
-of the metabolomics field).  </p>
-</li>
-<li><code>--ica</code><br>This option is required for plotting ICA results. All <em>principal components</em>
-mentioned above will be replaced by <em>independent components</em> when <code>--ica</code> is
-turned on.  </li>
-<li><code>--plot</code><br><code>--plot</code> is optional. When it is on, all figures will be saved as PNG images.  </li>
 </ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Normalization mode</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>No normalization on PC values</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Normalize all PC values to 1.0, with PC1 increasing (typical for a ligand binding isotherm)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Normalize all PC values to 1.0, regardless of the direction</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Normalize PC1 to 1.0 and set it to increase. Normalize all other components to PC1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Normalize PC1 to 1.0 without changing its orientation. Normalize all other components to PC1</td>
+</tr>
+<tr>
+<td>5*</td>
+<td>Normalize PC values to the sum of PC1+PC2</td>
+</tr>
+<tr>
+<td>6<sup>$</sup></td>
+<td>Normalize 2 phase binding isotherms into monotonic increasing, reverse turning point</td>
+</tr>
+</tbody>
+</table>
+<p>* This mode was used for two sequential binding events
+$  This option might be used for binding isotherms of titrations where 
+    spectra in the middle of the titration are severely perturbed and the 
+    trajectory of change is V-shaped.</p>
+<ul>
+<li><p><code>--biplot</code></p>
+<p>This option shows the &quot;bi-plot&quot; of the first two principal components in 
+matrix VT. (A bi-plot is the equivalent of a score plot in the nonmenclature
+of the metabolomics field).</p>
+</li>
+<li><p><code>--ica</code></p>
+<p>This option is required for plotting ICA results. All <em>principal components</em>
+mentioned above will be replaced by <em>independent components</em> when <code>--ica</code> is
+turned on.</p>
+</li>
+<li><p><code>--plot</code><br><code>--plot</code> is optional. When it is on, all figures will be saved as PNG images.  </p>
 </li>
 </ul>
 <h3 id="reconstruction-script---use-the-pca-results-from-the-main-script-to-model-the-2d-measurements">Reconstruction script - Use the PCA results from the Main script to model the 2D measurements</h3>
 <ul>
 <li><h4 id="gui-and-cli-programs">GUI and CLI programs</h4>
-GUI: <code>trendreconstructgui.exe</code> in Windows and Linux, <code>trendreconstructgui.app</code>
-in OS X<br>CLI: <code>trendreconstruct.exe</code> in all platforms  </li>
+<p>GUI: <code>trendreconstructgui.exe</code> in Windows and Linux, <code>trendreconstructgui.app</code>
+in OS X</p>
+<p>CLI: <code>trendreconstruct.exe</code> in all platforms</p>
+</li>
 <li><h4 id="synopsis">Synopsis</h4>
 <pre><code>trendreconstruct.exe -n [components] -m [1/2/3/4]] [-e] [-p] [-r] [-z] 
 [-d] [--rmsd] [--gif] [--dpi integral for dpi of output PNG files]
 </code></pre></li>
 <li><h4 id="description">Description</h4>
-  <code>trendreconstruct.exe</code> rebuilds the original 2D measurements using the first
+<p><code>trendreconstruct.exe</code> rebuilds the original 2D measurements using the first
    N principal components or the Nth principal component obtained from the 
    main script. The script <code>trendreconstruct.exe</code> requires that the 
    <code>--reconstruct</code> option be turned on when using <code>trendmain.exe</code>. Normally 
    <code>trendmain.exe</code> will not save the files needed for PCA reconstruction unless
-   the  <code>--reconst</code> option is used.   </li>
+   the  <code>--reconst</code> option is used.</p>
+</li>
 <li><h4 id="options">Options</h4>
 <ul>
 <li><code>-n component(s) selected for reconstruction</code><br><code>-n</code> specifies principal components selected to use in rebuilding 
@@ -522,32 +588,63 @@ the range of components 1 to 3, use <code>-n 1-3</code>. Range and individual
 components can be selected together, e.g. <code>-n 1,3-5,7</code> means reconstruction 
 by components 1, 3, 4, 5, 7. Note space is <strong>not</strong> allowed between selected 
 components unless quotation marks are used. i.e. <code>-n &apos;1, 3-5, 7&apos;</code>.   </li>
-<li><p><code>-m [1/2/3/4]</code><br>Background:  <code>trendmain.exe</code> reorganizes the measurements listed in 
+<li><p><code>-m [1/2/3/4]</code></p>
+<p>Background:  <code>trendmain.exe</code> reorganizes the measurements listed in 
 <code>file.index</code> as a large 2D matrix, filters them, and scales them for PCA. 
 The <code>-m</code> option specifies which stage of the process should be reconstructed. 
 <code>-m</code> specifies which matrix will be reconstructed. The choices are:  </p>
-<p>matrix mode|meaning<br>-----------|-------<br>1    | This recovers the state right before doing PCA. The large 2D matrix is row (column) scaled, with unchanged rows and noisy regions filtered out
-2    | This differs from matrix mode 1 in that the rows (columns) are unscaled
-3    | This option also recovers the filtered, unchanged rows from matrix mode 2
-4*   | This option differs from matrix mode 3 in also recovering the low intensity regions filtered out from being below the threshold</p>
-<p>* mode 4 is for <strong>Fourier-Transformed 2D NMR spectra</strong> where <code>-r</code> option 
-was used in <code>trendmain.exe</code> to set the threshold for filtering low intensity
-regions.  </p>
 </li>
-<li><p><code>-e</code><br><code>-e</code> is optional. When it is on, the reconstructions of the measurements are
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>matrix mode</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>This recovers the state right before doing PCA. The large 2D matrix is row (column) scaled, with unchanged rows and noisy regions filtered out</td>
+</tr>
+<tr>
+<td>2</td>
+<td>This differs from matrix mode 1 in that the rows (columns) are unscaled</td>
+</tr>
+<tr>
+<td>3</td>
+<td>This option also recovers the filtered, unchanged rows from matrix mode 2</td>
+</tr>
+<tr>
+<td>4*</td>
+<td>This option differs from matrix mode 3 in also recovering the low intensity regions filtered out from being below the threshold</td>
+</tr>
+</tbody>
+</table>
+<p>* mode 4 is for <strong>Fourier-Transformed 2D NMR spectra</strong> where <code>-r</code> option 
+    was used in <code>trendmain.exe</code> to set the threshold for filtering low intensity
+    regions.</p>
+<ul>
+<li><p><code>-e</code></p>
+<p><code>-e</code> is optional. When it is on, the reconstructions of the measurements are
 exported in the same format as the original measurements read into 
 <code>trendmain.exe</code>. If input format is <code>movie</code> or <code>png</code>, the output 
 format will be mp4 format movie clip. mp4 movie reconstructed from <code>movie</code> 
 shares the same time length as the input movie. mp4 movie reconstructed 
-from a series of PNG images is set as 10 second long.  </p>
+from a series of PNG images is set as 10 second long.</p>
 </li>
-<li><code>-p</code><br><code>-p</code> is optional. When it is on, the reconstructed images are exported as 
-images in PNG format.  </li>
-<li><code>--gif</code><br><code>--gif</code> is optional. When it is on, the reconstructed movies are 
+<li><p><code>-p</code></p>
+<p><code>-p</code> is optional. When it is on, the reconstructed images are exported as 
+images in PNG format.</p>
+</li>
+<li><p><code>--gif</code><br><code>--gif</code> is optional. When it is on, the reconstructed movies are 
 exported as GIF animation just in case there is no appropriate 
 media player to play <code>.mp4</code> movie clip generated by <code>-e</code>. GIF animation 
 is more compatible since most web browsers can play it, although it 
-has larger size than mp4.  </li>
+has larger size than mp4.  </p>
+</li>
 <li><code>--dpi</code><br>When <code>-p</code> option is turned on, <code>--dpi</code> specifies the dots-per-inch resolution
 of the png files to be reconstructed. By default, this is set to 96. This 
 option is not required.  </li>
@@ -568,22 +665,22 @@ example, if <code>trendmain.exe</code> was used with the <code>-o example</code>
 option generates a file named as <code>prefix-rmsd.txt</code>.  </li>
 <li><code>-o [output prefix name]</code><br><code>-o</code> specifies the prefix of reconstructed files or images  </li>
 </ul>
-</li>
-</ul>
 <h3 id="svd-test-script">SVD test script</h3>
 <ul>
 <li><h4 id="cli-program">CLI program</h4>
-<code>trendtest.exe</code> in all platforms  </li>
+<p><code>trendtest.exe</code> in all platforms</p>
+</li>
 <li><h4 id="synopsis">Synopsis</h4>
 <pre><code>trendtest.exe [-r] [-f [outname prefix of trendmain.exe]]
 </code></pre></li>
 <li><h4 id="description">Description</h4>
-<code>trendtest.exe</code> analyzes PCA results generated by <code>trendmain.exe</code> and <code>reconst.py</code>.
+<p><code>trendtest.exe</code> analyzes PCA results generated by <code>trendmain.exe</code> and <code>reconst.py</code>.
 It saves a table of attributes for evaluating the SVD outcome in the 
 <code>prefix-svdtest.csv</code> file. Columns of the table are: Component, Size of singular
 value, cumulative contribution ratio, auto correlation coefficient, RMSD, and 
 Normalized RMSD, respectively. The last two columns are optional and depend on 
-whether <code>trendreconstruct.exe --rmsd</code> was executed.  </li>
+whether <code>trendreconstruct.exe --rmsd</code> was executed.</p>
+</li>
 <li><h4 id="options">Options</h4>
 <ul>
 <li><code>-r</code><br><code>-r</code> reads all arguments used by <code>trendmain.exe</code>. When <code>-r</code> is used <code>-f</code> is 
@@ -596,12 +693,15 @@ with the <code>-o</code> option when using the <code>trendmain.exe</code> progra
 <h3 id="report-script">Report script</h3>
 <ul>
 <li><h3 id="cli-program">CLI program</h3>
-<code>trendplot.exe</code> in all platforms.  </li>
+<p><code>trendplot.exe</code> in all platforms.</p>
+</li>
 <li><h4 id="synopsis">Synopsis</h4>
-<code>trendreport.exe</code>  </li>
+<p><code>trendreport.exe</code></p>
+</li>
 <li><h4 id="description">Description</h4>
-<code>trendreport.exe</code> generates an HTML report just in case the <code>trendmain</code> 
-was executed without turning on <code>--report</code> option. </li>
+<p><code>trendreport.exe</code> generates an HTML report just in case the <code>trendmain</code> 
+was executed without turning on <code>--report</code> option.</p>
+</li>
 </ul>
 
                                 
@@ -646,7 +746,7 @@ was executed without turning on <code>--report</code> option. </li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Command Line Manual","level":"1.5","depth":1,"next":{"title":"Tutorial","level":"1.6","depth":1,"path":"doc/tutorial.md","ref":"doc/tutorial.md","articles":[]},"previous":{"title":"GUI manual","level":"1.4","depth":1,"path":"doc/GUI.md","ref":"doc/GUI.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/manual.md","mtime":"2016-11-08T17:45:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-08T20:04:41.499Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Command Line Manual","level":"1.5","depth":1,"next":{"title":"Tutorial","level":"1.6","depth":1,"path":"doc/tutorial.md","ref":"doc/tutorial.md","articles":[]},"previous":{"title":"GUI manual","level":"1.4","depth":1,"path":"doc/GUI.md","ref":"doc/GUI.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/manual.md","mtime":"2016-11-08T23:03:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-08T22:58:36.051Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,6 +1,6 @@
 ### Installing the TREND package under Windows, OS X or Linux
 
-To obtain access to TREND, go to [http:\/\/biochem.missouri.edu\/trend\/](http://biochem.missouri.edu/trend/)
+To obtain access to TREND, go to [http://biochem.missouri.edu/trend/](http://biochem.missouri.edu/trend/)
 
 Submit either an academic license agreement or request for commercial 
 licensing, as well as the contact information for you and your laboratory.
@@ -15,7 +15,7 @@ containing symbolic links to the executable files with GUI.
 
 The OS X and Linux installation script change the PATH environment variable. 
 The Windows script `TRENDterminal.bat` opens a command shell in which all 
-executable files of TREND \(with suffix of `.exe`\) can be invoked, both the 
+executable files of TREND (with suffix of `.exe`) can be invoked, both the 
 versions operated by GUI and at the command line. 
 Note that the installation process is not completed until the first 
 calculations using `trendmain` and `trendreconstruct` trigger the download 
@@ -54,12 +54,12 @@ usage, please see the document `no_internet_connection.pdf`
   `TREND-GUI` folder on the desktop, which contains `trendmaingui.app`, 
   `trendplotgui.app`, and `trendreconstructgui.app`. 
   The installation scripts can only be executed within the terminal shell.
-  \(Do not run this script directly from OS X desktop GUI by clicking 
-  because the installation script will not work properly\).  
+  (Do not run this script directly from OS X desktop GUI by clicking 
+  because the installation script will not work properly).  
 * Three icons, `trendmaingui.app`, `trendplotgui.app`, and `trendreconstructgui.app`
   will also be added to `/Applications/TREND`. These icons should be visible 
-  in Launchpad and the Applications folder in Finder. \(Refreshing Launchpad 
-  may be needed\).  
+  in Launchpad and the Applications folder in Finder. (Refreshing Launchpad 
+  may be needed).  
 * The current TREND directory is also added to the `PATH` environment 
   variable. Three lines will be added to the file `~/.bash_profile`. The 
   lines begin with `#TREND path environment`  
