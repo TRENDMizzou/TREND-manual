@@ -1,0 +1,319 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Tutorial · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="manual.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="GUI.html">
+            
+                <a href="GUI.html">
+            
+                    
+                    GUI manual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="manual.html">
+            
+                <a href="manual.html">
+            
+                    
+                    Command Line Manual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="tutorial.html">
+            
+                <a href="tutorial.html">
+            
+                    
+                    Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Tutorial</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="tutorial-extract-the-time-courses-of-respiration-and-heart-contraction">Tutorial: Extract the time courses of respiration and heart contraction</h2>
+<p>(The MRI movie is courtesy of Jens Frahm and coworkers at Max-Planck-Institut f&#xFFFD;r
+Biophysikalische Chemie in G&#xFFFD;ttingen and is available at:
+<a href="http://www.biomednmr.mpg.de/index.php?option=com_content&amp;task=view&amp;id=132&amp;Itemid=38#Cardio" target="_blank">http://www.biomednmr.mpg.de/index.php?option=com_content&amp;task=view&amp;id=132&amp;Itemid=38#Cardio</a>  </p>
+<h3 id="1-do-pca-on-the-movie">1. Do PCA on the movie</h3>
+<p>Select the movie named as <code>cardiac-rtMRI.avi</code> in the unzippped 
+<code>TRENDexample</code> folder. Run PCA using <code>trendmaingui</code> with row scaling method 
+set as <code>noscaling</code>,  and <code>reconstruct</code> option turned on to save files for
+reconstruction.<br><img src="https://bytebucket.org/chia_hsu/trend/raw/fb28422bb0533953c364427db8315a33e0cd415b/docs/png/png_tutorial/1_trendmain.png?token=953a23fe763e1ee6450967e21d016d8d9e54f92e" alt="trendmain"><br>To do this at the command line, <code>cd</code> to the directory where the 
+<code>cardiac-rtMRI.avi</code> is, and run:<br><code>trendmain.exe -f cardiac-rtMRI.avi -t movie -s noscaling --reconst --report</code>   </p>
+<h3 id="2-visualize-pca-results">2. Visualize PCA results</h3>
+<p>When the PCA  calculation finishes, run <code>trendplotgui</code> with <code>readparm</code> 
+option set as <code>Yes</code> to read arguments from the just finished <code>trendmaingui</code>. 
+Set <code>pcn</code> as 2 to show the first two components as well as scree plot. To 
+visualize results obtained from PCA on movie, TREND will extract time of 
+frames and use it as ticks in X-axis. If not specified, the default units 
+will be seconds.<br>To do this at the  command line, use <code>trendplot.exe -r -e -n 2</code><br><img src="https://bytebucket.org/chia_hsu/trend/raw/6f17d3f8ebc22cb203e0266265299f6ae1debbd1/docs/png/png_tutorial/2_trendplot.png?token=2a270d122b9c3b7fce157daf06d70ee6a85ef0e7" alt="trendplot"><br>When <code>trendplotgui</code> finishes, PC1 and PC2 are plotted. It is clear that 
+PC1 represents time course of two breaths and that PC2 tracks the cardiac 
+osciallation between diastole and systole.<br><img src="https://bytebucket.org/chia_hsu/trend/raw/6f17d3f8ebc22cb203e0266265299f6ae1debbd1/docs/png/png_tutorial/3_2PCs.png?token=3a61ee2abf72217a3b420464512df1cc982057d2" alt="PC1and2"><br><img src="https://bytebucket.org/chia_hsu/trend/raw/dab91cf79d3c63afc2adba946d3fd894f0b054ae/docs/png/png_tutorial/4_scree.png?token=fa5380d3615f324e1be0f8d2aa9e611fa46e5cd6" alt="scree"><br>From the scree plot we can find that PC1 and PC2 contribute to ~50% of 
+the total variance.  </p>
+<h3 id="3-reconstructing-movies-from-only-pc1-and-pc2">3. Reconstructing Movies from only PC1 and PC2</h3>
+<p>It will be interesting to see movies reconstructed by PC1 and PC2. Run 
+<code>trendreconstructgui</code> and use the following settings.<br><img src="https://bytebucket.org/chia_hsu/trend/raw/0ab9f8c2be102fcf49fd03bd4bc1fe3eb5be4aa0/docs/png/png_tutorial/5_trendreconstruct_pc1.png?token=c2d8e69da0e6a032c9ced71a5d9ee85dd8fb4de4" alt="reconstPC1"><br>Leaving most settings at the default. Set the <code>prefix for the output</code> to 
+<code>PC1</code>. It can be seen that a <code>PC1.mp4</code> is generated once <code>trendreconstructgui</code> 
+finishes.<br>The command line usage is: <code>trendreconstruct.exe -r -n 1 -e -o PC1</code><br>A movie clip <code>PC2.mp4</code> reconstructed from PC2 is generated in the same way:<br><img src="https://bytebucket.org/chia_hsu/trend/raw/0c1f26d1e1424ee0bed0ec096dce1477fffdff56/docs/png/png_tutorial/6_trendreconstruct_pc2.png?token=36c09275ae40dd810c2204a1ba986846c18e3273" alt="reconstPC2"><br>Its command line usage is: <code>trendreconstruct.exe -r -n 2 -e -o PC2</code><br>The two reconstructed movies to result are <code>PC1.mp4</code> and <code>PC2.mp4</code>. Playing 
+the PC1 movie shows only respiration. Playing the PC2 movie shows only the 
+heart beating.<br><img src="https://bytebucket.org/chia_hsu/trend/raw/4fe917ccc0438956dc51fbd83b603c0a449d3a3b/docs/png/png_tutorial/PC1.gif?token=d9ba88d8458d8675b997e4dce2133b9ada145c5e" alt="PC1_breathing"><br>Above is <code>PC1.mp4</code><br><img src="https://bytebucket.org/chia_hsu/trend/raw/4fe917ccc0438956dc51fbd83b603c0a449d3a3b/docs/png/png_tutorial/PC2.gif?token=1564c52a5c0c7ca632c606b72e8f56bf170d1a11" alt="PC2_cardiac"><br>Above is <code>PC2.mp4</code>  </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="manual.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Command Line Manual">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Tutorial","level":"1.6","depth":1,"previous":{"title":"Command Line Manual","level":"1.5","depth":1,"path":"doc/manual.md","ref":"doc/manual.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/tutorial.md","mtime":"2016-11-08T17:45:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-08T20:04:41.499Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
