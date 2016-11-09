@@ -15,12 +15,15 @@ package includes a program to reconstruct movies or a stack of spectra from the 
 components selected by the user. TREND has been developed for ease of installation under Windows,
 Mac OS X, and Ubuntu and Fedora versions of Linux. TREND© (sponsored by NSF) is free for academic
 users.
+___
 
 
-<img src="./png/Intro_kinetics.jpg" width="400" alt="main time course" align="middle">   
+<img src="./png/kinetics_small.png" width="400" alt="main time course" align="middle">   
 #### TREND captures main time courses of change of movies or NMR spectra  
-<img src="./png/Intro_png1.png" width="400" alt="workflow" align="middle">  
+<img src="./png/workflow_small.png" width="400" alt="workflow" align="middle">  
 
+
+___  
 
 [Academic Software License Request](http://biochem.missouri.edu/trend/academic_request.php)  
 [Non-Academic/Commerical Software License Request](http://biochem.missouri.edu/trend/commerical_request.php)  

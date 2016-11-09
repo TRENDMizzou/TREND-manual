@@ -25,7 +25,7 @@ usage, please see the document [`no_internet_connection.pdf`](./manual/no_intern
 
 #### Windows 7 or above
 
-* Unzip the `TREND-Win7-0.7.8.3.7z` by [7zip](http://www.7-zip.org).  
+* Unzip the `TREND-1.0-Win.7z` by [7zip](http://www.7-zip.org).  
 * In the unzipped folder, double clicking `install.bat` will create a file
   named `TRENDterminal` and a folder on the desktop and start menu named 
   `TREND-GUI` containing `trendmaingui.exe`, `trendplotgui.exe`, and 
@@ -45,9 +45,9 @@ usage, please see the document [`no_internet_connection.pdf`](./manual/no_intern
 
 #### Mac OS X 10.7.5 and later
 
-* Unzip the `TREND-OSX-Lion-0.7.8.3.tar.gz` by double clicking the file 
+* Unzip the `TREND-1.0-macOS.tar.gz` by double clicking the file 
   displayed in the OS X GUI. Alternatively, run the command 
-  `tar -xzvf TREND-OSX-Lion-0.7.8.3.tar.gz` within a terminal shell.  
+  `tar -xzvf TREND-1.0-macOS.tar.gz` within a terminal shell.  
 * Open a terminal shell and `cd` to the unzipped folder named 
   `TREND-0.7.8.3-OSX`, enter the command `./install.script` to create a 
   `TREND-GUI` folder on the desktop, which contains `trendmaingui.app`, 
@@ -67,13 +67,13 @@ usage, please see the document [`no_internet_connection.pdf`](./manual/no_intern
 * If TREND was previously installed,  the old version will be uninstalled 
   before the new installation.  
 * `sudo` may be necessary if permission is required.  
-  An example: Download `TREND-OSX-Lion-0.7.8.3.tar.gz` to `~/Downloads/`  
+  An example: Download `TREND-1.0-macOS.tar.gz` to `~/Downloads/`  
 * If you are comfortable with shell terminal, you can just enter 
   `./change_path_env.script` to add the current TREND directory to `PATH` 
   environment variable. No permission is required.  
   ```bash
-  tar -xzvf TREND-OSX-Lion-0.7.8.3.tar.gz
-  cd ~/Downloads/TREND-OSX-Lion-0.7.8.3
+  tar -xzvf TREND-1.0-macOS.tar.gz
+  cd ~/Downloads/TREND-1.0-macOS
   ./install.script 
   (or sudo ./install.script if permission is required)
   ```
@@ -81,8 +81,8 @@ usage, please see the document [`no_internet_connection.pdf`](./manual/no_intern
 
 #### Linux 64-bit, such as recent Ubuntu 14.04, Fedora 23 and later
 
-* Unzip the `TREND-Ubuntu14.04-0.7.8.3.tar.gz` by entering the command 
-  `tar -xzvf TREND-Ubuntu14.04-0.7.8.3.tar.gz` within a terminal shell.  
+* Unzip the `TREND-1.0-Ubuntu14.04.tar.gz` by entering the command 
+  `tar -xzvf TREND-1.0-Ubuntu14.04.tar.gz` within a terminal shell.  
 * Enter `./install.script` within the terminal shell to add the current 
   TREND directory to the `PATH` environment variable. Three lines will be 
   added to `~/.bashrc`, starting with `#TREND path environment`.   
@@ -97,8 +97,8 @@ usage, please see the document [`no_internet_connection.pdf`](./manual/no_intern
   #### Uninstalling or Moving
 
 * Run `uninstall.bat` in Windows or `uninstall.script` in OS X and Linux.    
-* Then delete the `TREND-Win7-0.7.8.3` ,`TREND-OSX-Lion-0.7.8.3`, or 
-  `TREND-Ubuntu14.04-0.7.8.3` folder.  
+* Then delete the `TREND-1.0-Win` ,`TREND-1.0-macOS`, or 
+  `TREND-1.0-Ubuntu14.04` folder.  
 * To move the TREND folder to a new location, first uninstall it, move 
   the TREND foler to the new location, and install it again, thereby 
   overwriting the previously installed TREND executable files.  

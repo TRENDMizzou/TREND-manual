@@ -69,8 +69,7 @@
 	  in the case of NMR spectra, 
       we highly recommend using the same set of `NMRPipe` scripts to 
       convert Bruker or Agilent data into NMRPipe **fid** and **ft2** formats.  
-  	* ##### Other input formats: text, spreadsheet, JCAMP-DX spectra, 
-	and movies  
+  	* ##### Other input formats: text, spreadsheet, JCAMP-DX spectra, and movies  
     * **txt** Data stored in plain text format delimited by spaces, this 
       option could be used for other spectroscopy methods such as time-
       dependent 2D-IR.  
@@ -193,7 +192,7 @@
     For example, the option `-o test` generates output files named as 
     `test-s.txt`, `test-vt.txt`, `test-PC.txt`, `test-PC1.txt`
 
-    `prefix-s.txt` and `prefix-vt.txt` save S and VT matrices in the SVD 
+    `prefix-s.txt` and `prefix-vt.txt` save S and V<sup>T</sup> matrices in the SVD 
     calculation. U matrix is by default omitted because its usually big size.
 
     When ICA is used instead of PCA (`-i` option is on), the prefix includes 
@@ -353,7 +352,7 @@ $  This option might be used for binding isotherms of titrations where
   * `--biplot`
 
     This option shows the "bi-plot" of the first two principal components in 
-    matrix VT. (A bi-plot is the equivalent of a score plot in the nonmenclature
+    matrix V<sup>T</sup>. (A bi-plot is the equivalent of a score plot in the nonmenclature
     of the metabolomics field).
 
   * `--ica`
@@ -385,7 +384,7 @@ $  This option might be used for binding isotherms of titrations where
 * #### Description
 
   `trendreconstruct.exe` rebuilds the original 2D measurements using the first
-     N principal components or the Nth principal component obtained from the 
+     N principal components or the N<sup>th</sup> principal component obtained from the 
      main script. The script `trendreconstruct.exe` requires that the 
      `--reconstruct` option be turned on when using `trendmain.exe`. Normally 
      `trendmain.exe` will not save the files needed for PCA reconstruction unless
