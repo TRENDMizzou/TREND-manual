@@ -1,13 +1,3 @@
-# TREND: TRack Equilibrium or Non-equilibrium shifts in Data
-
-### Resolve and Reconstruct Trends such as Binding Isotherms and Time Courses Directly from Spectra, Imaging, or Lists
-
-## Introduction:
-
-TREND is a software package that determines the main trend(s) of change across a series of 2D digital measurements, such as imaging and NMR spectra. TREND works by applying principal component analysis to non-interpreted 2D digital measurements in multiple formats including spectra (from NMR, other spectroscopies, and mass spectrometry), raw NMR data, movies, images, lists, and spreadsheet files. The principal components extracted from them by TREND represent the main changes among the data frames. These could be binding isotherms, time courses, or a variety of population shifts. The main requirement is that the data frames be measured consistently in order to allow quantitative comparison. Series of 2D measurements in an unsupported format may be converted into a text file or spreadsheet in order to be read by TREND for analysis. The TREND package includes a program to reconstruct movies or a stack of spectra from the principal components selected by the user. TREND has been developed for ease of installation under Windows, Mac OS X, and Ubuntu and Fedora versions of Linux. TREND (copyright pending and sponsored by NSF) is free for academic users.
-
-![TREND introduction](https://bytebucket.org/chia_hsu/trend/raw/303d974a4e9aea9820459ff9adf024973fd3b86a/docs/png/png_readme/Picture1.png?token=75e14157952a262d5b24a87796b83cd83ec9c991)
-
 ### Simple Example: Determine binding isotherm from NMR spectra in UCSF format
 
 #### _GUI USAGE_
@@ -41,9 +31,7 @@ TREND is a software package that determines the main trend(s) of change across a
   If TREND is used in your research, please cite the references 
   [Jia Xu and Steven R. Van Doren, Binding Isotherms and Time Courses Read
   ily from Magnetic Resonance. _Anal. Chem._ 2016, 88 (16), pp 8172-8178](
-  [http://pubs.acs.org/doi/abs/10.1021/acs.analchem.6b01918](http://pubs.acs.org/doi/abs/10.1021/acs.analchem.6b01918))
-
-
-Jia Xu and Steven R. Van Doren, Tracking Equilibrium and Non-equilibrium 
+  http://pubs.acs.org/doi/abs/10.1021/acs.analchem.6b01918)  
+  Jia Xu and Steven R. Van Doren, Tracking Equilibrium and Non-equilibrium 
 Shifts in Data with TREND. Submitted.
 
