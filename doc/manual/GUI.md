@@ -75,7 +75,7 @@ movie, time will be automatically extracted from the movie and saved as
 images) can be resized to make it smaller by skipping frames of the movie 
 and setting the parameters `compress` and `sparsity` according to the 
 [manual](./manual.md). TREND can select a certain portion of a movie by setting `starttime` and `endtime` parameters. 
-The number format for setting start and end time can either 
+The numberic format for setting the start and end time can either 
 be floating point numbers of seconds (e.g. `0.2`), or `hh:mm:ss.ff`, such as 
 `00:03:05.00`. The default values for the `starttime` and `endtime` are 
 `0.0` and `end`, which do not trim the movie.   

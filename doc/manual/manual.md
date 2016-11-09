@@ -233,7 +233,7 @@
   * `--starttime [start time]`  
     TREND supports making a subclip of the input movie by setting its 
 	starting and ending time. 
-    The default value for `--starttime` is 0.0. The numberical format 
+    The default value for `--starttime` is 0.0. The numerical format 
 	for setting the 
     start time and end time could either be floating point numbers of seconds 
     (e.g. `0.2` stands for 0.2 s), or `hh:mm:ss.ff`, such as `00:03:05.00`, 
