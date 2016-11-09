@@ -11,11 +11,12 @@
 * Manual  
 	* [Graphic User Interface](doc/manual/GUI.md)
 	* [Command Line Interface](doc/manual/manual.md)
+	* [Known Limitations by OS](doc/Known_limitations_by_OS.md)
+	* [Initial uses without internet](doc/manual/no_internet_connection.md)
 * Tutorials
 	* [Extract the time courses of respiration and heart contraction](doc/tutorial/tutorial.md)
 * About TREND
 	* [How to cite](doc/how_to_cite.md)
 	* [Coming soon](doc/new_features.md)
-	* [Known Limitations by OS](doc/Known_limitations_by_OS.md)
 	* [Change Log](doc/ChangeLog.md)
 

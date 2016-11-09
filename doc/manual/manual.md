@@ -223,7 +223,6 @@
     For example, a [sparsity factor] of 1 means all frames will be used. 2 uses 
     every second frame, 3 uses every third frame, and so on.  
   * `--starttime [start time]`  
-    TREND supports making a subclip of input movie by setting start and end time. 
     The default value for `--starttime` is 0.0. The number format for setting 
     start and end time could either be floating point numbers of seconds 
     (e.g. `0.2` stands for 0.2 s), or `hh:mm:ss.ff`, such as `00:03:05.00`, 
@@ -386,7 +385,7 @@ $  This option might be used for binding isotherms of titrations where
     `-n` specifies principal components selected to use in rebuilding 
     the original measurements. For example, `-n 1` means reconstruct the 2D 
     measurements using only the first component, while `-n 3` uses the 
-    third components. To reconstruct individual, non-consecutive components, 
+    third component. To reconstruct individual, non-consecutive components, 
     you can separate the page numbers with commas: e.g. `-n 2,4,6` would 
     reconstruct using the second, fourth, and sixth components. To reconstruct 
     the range of components 1 to 3, use `-n 1-3`. Range and individual 
