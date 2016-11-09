@@ -13,7 +13,7 @@
   files, and whether to generate an HTML report. The default settings are 
   recommended.  
 3. Optional arguments are highlighted within the box with dashed line. 
-  See the manual for details. Here we specify `xaxis` and `xunits`  
+  See the [manual](./manual/GUI.md) for details. Here we specify `xaxis` and `xunits`  
 <img src=" https://bytebucket.org/chia_hsu/trend/raw/10b9c98b57798b4d9d157e603bdbfab66f27825b/docs/png/png_readme/Picture4.png?token=7b3bdf2976e64a4d939079db4d73e04ff97f2cf4" width="600" > 
 4. Press start button, TREND will run for a while and finish.  
   <img src="https://bytebucket.org/chia_hsu/trend/raw/10b9c98b57798b4d9d157e603bdbfab66f27825b/docs/png/png_readme/Picture5.png?token=367c41b42077367476e0984addf65561afaeef6b" width="600" > 
