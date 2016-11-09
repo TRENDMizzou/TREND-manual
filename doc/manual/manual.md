@@ -19,14 +19,17 @@
   (JCAMP-DX) format, plain text files, comma-separated (CSV) or Excel 
   spreadsheets listed in the index file.
 
-  `trendmain.exe` also reads and process single file, including movie, CSV or 
-  Excel spreadsheet, or text file.  TREND preprocesses them, applies singular 
-  value decomposition to provide U, s, and V matrices (Xu and Van Doren, 
-  submitted). Its normal mode is to provide principal components (PCs) from the 
+  `trendmain.exe` also reads and process a single file, including movie, 
+  an Excel spreadsheet, a comma-separated (CSV) text file, a JCAMP-DX 
+  file with multiple blocks, or a plain text file.  TREND preprocesses 
+  them, applies singular value decomposition to provide U, s, and V matrices 
+  ([Jia Xu and Steven R. Van Doren, Binding Isotherms and Time Courses Readily from Magnetic Resonance. _Anal. Chem._ 2016, 88 (16), pp 8172-8178](http://pubs.acs.org/doi/abs/10.1021/acs.analchem.6b01918)). 
+   Its routine mode is to provide principal components (PCs) from the 
   first few rows of the V matrix. TREND also has options to perform PCA 
-  reconstructions of the original data series or to perform independent components
-  analysis. s, V, and normalized PC1 values are output as text files in the names
-  of `prefix-s.txt`, `prefix-vt.txt`, and `prefix-pc1.txt`, which reports the binding 
+  reconstructions of the original data series or to perform 
+  independent components analysis (ICA). The S and V matrices and normalized 
+  PC1 values are output as text files in the names of `prefix-s.txt`, 
+  `prefix-vt.txt`, and `prefix-pc1.txt`, which reports the binding 
   isotherm. Additional PCs can be requested.
 
 * #### Typical usage with NMR spectra:
@@ -34,12 +37,11 @@
   `trendmain.exe -t ucsf -f file.index -r auto -o outfile -s auto --report`
 
 * #### Options
-
   * `-t [ucsf/fid/ft2/png/movie/txt/complextxt/csv/complexcsv/singlematrix]`
 
     `-t` specifies the input file format, the default format is .ucsf for NMR 
     spectra. The options for input file formats are:
-
+  	* ##### NMR file options  
     * **ucsf** Sparky ucsf format (default)  
     * **fid** NMRPipe fid format  
     * **ft2** NMRPipe ft2 format  
@@ -57,14 +59,18 @@
       readable by third-party software including TREND, set trace='f1', 
       display the full spectrum, and use the VnmrJ `flush` command are 
       required. Otherwise the `phasefile` will be all zero values. See 
-      the [Sparky manual](https://www.cgl.ucsf.edu/home/sparky/manual/files.html) 
-      for details.  
-      **Note** TREND supports on-the-fly analysis on Bruker and 
-      Agilent spectrometers. However to avoid effect of non-uniformity 
-      or outliers, all experimetnal data analyzed by TREND are preferably 
-      to be collected and processed in identical conditions. Therefore, 
+      the [Sparky manual](https://www.cgl.ucsf.edu/home/sparky/manual/files.html#ConvertVarian) for details. 
+	  **Note** TREND supports on-the-fly analysis on Bruker and 
+      Agilent spectrometers. Please note that TREND identification of 
+	  principal comopnents can be disrupted by a change in acquisition 
+	  parameters or an outlier among the spectra. Consequently, all 
+	  spectra or data frames to be analyzed by TREND should be 
+      collected and processed under identical conditions. Therefore, 
+	  in the case of NMR spectra, 
       we highly recommend using the same set of `NMRPipe` scripts to 
       convert Bruker or Agilent data into NMRPipe **fid** and **ft2** formats.  
+  	* ##### Other input formats: text, spreadsheet, JCAMP-DX spectra, 
+	and movies  
     * **txt** Data stored in plain text format delimited by spaces, this 
       option could be used for other spectroscopy methods such as time-
       dependent 2D-IR.  
@@ -108,11 +114,10 @@
       (introduced by JCAMP-DX 5.0 standard), which is designed for 
       multi-dimensional techniques with data sets of multiple variable. 
       For example, JCAMP-DX NMR uses `NUTPLE` to show mixed real/imaginary 
-      FID data sets. See [http://www.jcamp-dx.org/](http://www.jcamp-dx.org/) , 
-      [https://badc.nerc.ac.uk/help/formats/jcamp_dx/](https://badc.nerc.ac.uk/help/formats/jcamp_dx/)
-      and [http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/index.html](http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/index.html) 
-      for details of JCAMP-DX formats.   
-
+      FID data sets. See [http://www.jcamp-dx.org/](http://www.jcamp-dx.org/), 
+	  [https://badc.nerc.ac.uk/help/formats/jcamp_dx/](https://badc.nerc.ac.uk/help/formats/jcamp_dx/) and [http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/index.html](http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/index.html) 
+	  for details of JCAMP-DX formats.   
+ * ##### Reading a collection of files or spectra:  
   * `-f [fileindex/filename]`
 
     `-f` reads file index and is required
@@ -123,22 +128,23 @@
       An example is a series of five .ucsf files named numerically. The index
       file can be named as `index.ucsf` and includes the following lines in 
       the example:  
-      ![file.index.png]
-      ([https://bitbucket.org/repo/bboE8M/images/1070799385-file.index.png](https://bitbucket.org/repo/bboE8M/images/1070799385-file.index.png))  
+      <img src="https://bitbucket.org/repo/bboE8M/images/1070799385-file.index.png" alt="file.index" width="100">  
       Another example is a series of Bruker Topspin directories on a 
-      Windows platform. Absolute paths are supported as well as relative 
-      path, which is shown in the `UCSF` example. This "directory list" 
-      can be used for both **brukerfid** and **brukerspectra**. For 
+      Windows machine. Absolute paths are supported, as well as relative 
+      path, which is shown in the example of `UCSF` files. This 
+	  "directory list" can be used for both **brukerfid** and 
+	  **brukerspectra**. For 
       **brukerfid** data, TREND will read `fid` or `ser` data from the 
       listed directories. For **brukerspectra** data, TREND will read 
       `1r` or `2rr` files from the `pdata1` subdirectorires. Therefore, 
-      the processing number must always be set as `1`.   
-      ![dir.index.png](https://bytebucket.org/chia_hsu/trend/raw/a6b53994c9d44faaff51209d84ba153c3f7805e6/docs/png/png_manual/bruker-dir-index.png?token=c92c125dee2f271e853a31a14eefe9c72ed02195)   
-      `file.index` for Agilent VnmrJ could be used in a simmilar manner, 
+      the number of the pdata subdirectory for processed files must 
+	  always be set as `1`.   
+      <img src="https://bytebucket.org/chia_hsu/trend/raw/a6b53994c9d44faaff51209d84ba153c3f7805e6/docs/png/png_manual/bruker-dir-index.png?token=c92c125dee2f271e853a31a14eefe9c72ed02195" alt="dir.index" width="400">     
+      `file.index` for Agilent VnmrJ format could be used in a simmilar manner, 
       except its spectra are saved in the `datdir` subdirectories.   
     * [filename] can be the name of a singlematrix data set or a movie file 
       for processing.  
-
+ * ##### Preprocessing options:  
   * `-s [none/noscaling/auto/pareto/]`
 
       `-s` specifies scaling method applied on rows of the data matrix.
@@ -153,8 +159,9 @@
     * **pareto** means Pareto scaling. It reduces the importance of large 
       peaks but enhances the low, broader peaks. It is recommended for NMR 
       spectra in intermediate exchange.  
-    * Definitions of the scaling methods are given in: *J. BMC Genomics 2006, 
-      7, 142_. Other scaling options mentioned in this paper, such as ___*vast__
+    * Definitions of the scaling methods are given in: [_J. BMC Genomics 2006, 
+      7, 142_](http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-7-142). 
+	  Other scaling options mentioned in this paper, such as _**vast**_
       scaling, **range** scaling, **level** scaling are also provided.  
 
   * `-r [auto/1e5/3T/5t]`
@@ -211,6 +218,7 @@
     The default is 8. For example, if the size of a 2D spectra is 1024*2048, 
     setting `--bintimes 8` causes size of binned spectra to become 
     1024/8 _ 2048/8 = 128 _ 256  
+ 	* ##### Movie processing options:  
   * `--compress [compress factor]`  
     When processing **movie** the video can be resized by [compress factor] to 
     reduce computational cost. For example, 0.8 means the video size
@@ -223,12 +231,15 @@
     For example, a [sparsity factor] of 1 means all frames will be used. 2 uses 
     every second frame, 3 uses every third frame, and so on.  
   * `--starttime [start time]`  
-    The default value for `--starttime` is 0.0. The number format for setting 
-    start and end time could either be floating point numbers of seconds 
+    TREND supports making a subclip of the input movie by setting its 
+	starting and ending time. 
+    The default value for `--starttime` is 0.0. The numberical format 
+	for setting the 
+    start time and end time could either be floating point numbers of seconds 
     (e.g. `0.2` stands for 0.2 s), or `hh:mm:ss.ff`, such as `00:03:05.00`, 
     which means 3 minutes and 5 seconds.  
   * `--endtime [end time]`  
-    This option sets the end time for the subclip of input movie. By default 
+    This option sets the ending time for the subclip of input movie. By default 
     it is set as `end`. When `--starttime` and `--endtime` are set as default, 
     (`0.0` and `end`, respectively), the whole input video will be analyzed. 
     Otherwise a subclip video will be analyzed and exported as `from-starttime-to-endtime_movieclip.mp4`, 
@@ -260,7 +271,8 @@
     `index` file specified by the  `-f [fileindex]` option of `trendmain.exe`  
     For example, `concentration.txt` lists the five concentrations of a 
     titration, one per line:   
-    ![concentration.txt](https://bitbucket.org/repo/bboE8M/images/1883223853-concentration.txt.png)
+    <img src="https://bitbucket.org/repo/bboE8M/images/1883223853-concentration.txt.png" 
+	alt="concentration.txt" width="100">   
   * `-u [Unit]`   
     `-u` specifies label placed on the X-axis for plotting. [Unit] can be any 
     string.  
