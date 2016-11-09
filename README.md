@@ -20,6 +20,7 @@ ___
 
 <img src="./png/kinetics_small.png" width="400" alt="main time course" align="middle">   
 #### TREND captures main time courses of change of movies or NMR spectra  
+***
 <img src="./png/workflow_small.png" width="400" alt="workflow" align="middle">  
 
 

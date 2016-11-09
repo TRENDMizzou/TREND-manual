@@ -6,8 +6,7 @@ of choices of arguments and parameters are provided in the [manual for
 command-line versions](./manual.md).  
 ### Trendmain - Obtain Principal Components from a series of 2D Measurements
 - Launch using `trendmaingui.exe` or `trendmaingui.app`. In the  left side 
-bar, there are for different modes to choose from: **`basic`**, 
-**`all_purpose`**, 
+bar, there are for different modes to choose from: **`basic`**, **`all_purpose`**, 
 **`nmr`**, and **`movie`**. They function similarly with minor differences.  
 <img src="https://bytebucket.org/chia_hsu/trend/raw/72cf7b768324cb6311286619394581b4eea5558f/docs/png/png_gui/Png1_trendbasic.png?token=a6acdfe7048141d5b465d31ee0135ab59cec4d0c" alt="trend_basic" width="600">   
 - The **`basic`** menu can be used for simple PCA work. A series of 2D data 
