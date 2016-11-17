@@ -11,6 +11,7 @@
 * Manual  
 	* [Graphic User Interface](doc/manual/GUI.md)
 	* [Command Line Interface](doc/manual/manual.md)
+	* [Support File Formats](doc/manual/fileformat.md)
 	* [Known Limitations by OS](doc/Known_limitations_by_OS.md)
 	* [Initial uses without internet](doc/manual/no_internet_connection.md)
 * Tutorials
