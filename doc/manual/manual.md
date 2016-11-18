@@ -217,36 +217,21 @@
     The default is 8. For example, if the size of a 2D spectra is 1024*2048, 
     setting `--bintimes 8` causes size of binned spectra to become 
     1024/8 _ 2048/8 = 128 _ 256  
- 	* ##### Movie processing options:  
-  * `--compress [compress factor]`  
-    When processing **movie** the video can be resized by [compress factor] to 
-    reduce computational cost. For example, 0.8 means the video size
-    will be resized to 80%. [compress factor] can be cho  sen from the interval 
-    (0, 1.0]. By default [compress factor] is set as 1.0, which means use all 
-    the data, i.e. don't compress the data.
-  * `--sparsity [sparsity factor]`   
-    This option controls skipping frames of the input video file by picking up 
-    every n-th frame from the video, where n is specified by [sparsity factor].
-    For example, a [sparsity factor] of 1 means all frames will be used. 2 uses 
-    every second frame, 3 uses every third frame, and so on.  
-  * `--starttime [start time]`  
-    TREND supports making a subclip of the input movie by setting its 
-	starting and ending time. 
-    The default value for `--starttime` is 0.0. The numerical format 
-	for setting the 
-    start time and end time could either be floating point numbers of seconds 
-    (e.g. `0.2` stands for 0.2 s), or `hh:mm:ss.ff`, such as `00:03:05.00`, 
-    which means 3 minutes and 5 seconds.  
-  * `--endtime [end time]`  
-    This option sets the ending time for the subclip of input movie. By default 
-    it is set as `end`. When `--starttime` and `--endtime` are set as default, 
-    (`0.0` and `end`, respectively), the whole input video will be analyzed. 
-    Otherwise a subclip video will be analyzed and exported as `from-starttime-to-endtime_movieclip.mp4`, 
-    or `from-starttime_movieclip.mp4` if the `--endtime` is set as the default `end`.  
   * `--columnscaling [none/noscaling/auto/pareto]`  
     `--columnscaling` specifies the scaling method applied on columns of the 
     data matrix. Options and meanings of scaling methods are defined in the `-s`
-    option. By default `--columnscaling` is set as [none].  
+    option. By default `--columnscaling` is set as [none].   
+  * `--solventfilter [none/Gaussian/sine-bell/sine-square-bell]`  
+  	`--solventfilter` applies solvent filter to FID signals in `fid`, 
+	`brukerfid`, `agilentfid` and `jcamp-dx` format    
+	**none** means no water filter will be applied   
+	**Gaussian** applies solvent filter with Gaussian filter   
+	**sine-bell** applies solvent filter with sine-bell shaped filter  
+	**sine-bell-square** applies solvent filter with squared sine-bell shaped filter  
+	**rectangular** applies solvent filter with boxcar filter  
+	See [nmrglue reference guide](http://nmrglue.readthedocs.io/en/latest/reference/proc_bl.html#user-functions) 
+	and [Marion et al, J Mag Reson 1989 84, 425-430](http://www.sciencedirect.com/science/article/pii/0022236489903910) 
+	for details.  
   * `-i` or `--ica`  
     This option uses the independent component analysis (ICA) module instead of
     PCA.  
@@ -283,6 +268,32 @@
     represent the smoothness of component curves. For more control of 
     plotting of principal or independent components display, please use
     `trendplot.exe`.  
+ 	* ##### Movie processing options:  
+  * `--compress [compress factor]`  
+    When processing **movie** the video can be resized by [compress factor] to 
+    reduce computational cost. For example, 0.8 means the video size
+    will be resized to 80%. [compress factor] can be cho  sen from the interval 
+    (0, 1.0]. By default [compress factor] is set as 1.0, which means use all 
+    the data, i.e. don't compress the data.
+  * `--sparsity [sparsity factor]`   
+    This option controls skipping frames of the input video file by picking up 
+    every n-th frame from the video, where n is specified by [sparsity factor].
+    For example, a [sparsity factor] of 1 means all frames will be used. 2 uses 
+    every second frame, 3 uses every third frame, and so on.  
+  * `--starttime [start time]`  
+    TREND supports making a subclip of the input movie by setting its 
+	starting and ending time. 
+    The default value for `--starttime` is 0.0. The numerical format 
+	for setting the 
+    start time and end time could either be floating point numbers of seconds 
+    (e.g. `0.2` stands for 0.2 s), or `hh:mm:ss.ff`, such as `00:03:05.00`, 
+    which means 3 minutes and 5 seconds.  
+  * `--endtime [end time]`  
+    This option sets the ending time for the subclip of input movie. By default 
+    it is set as `end`. When `--starttime` and `--endtime` are set as default, 
+    (`0.0` and `end`, respectively), the whole input video will be analyzed. 
+    Otherwise a subclip video will be analyzed and exported as `from-starttime-to-endtime_movieclip.mp4`, 
+    or `from-starttime_movieclip.mp4` if the `--endtime` is set as the default `end`.  
 
 
 ### Plotting script -- display the principal components identified by the main script
