@@ -1,7 +1,11 @@
 ## Tutorial: Extract the time courses of respiration and heart contraction
-(The MRI movie is courtesy of Jens Frahm and coworkers at Max-Planck-Institut f�r
-Biophysikalische Chemie in G�ttingen and is available at:
-[http://www.biomednmr.mpg.de/index.php?option=com_content&task=view&id=132&Itemid=38#Cardio](http://www.biomednmr.mpg.de/index.php?option=com_content&task=view&id=132&Itemid=38#Cardio)  
+<img src="../png/tutorial_cardiac/Media18.gif" width="350" alt="cardiac movie">  
+(This MRI movie is courtesy of Jens Frahm and coworkers at Max-Planck-Institut fur
+Biophysikalische Chemie in Gottingen and is available at:
+[http://www.biomednmr.mpg.de/index.php?option=com_content&task=view&id=132&Itemid=38#Cardio](http://www.biomednmr.mpg.de/index.php?option=com_content&task=view&id=132&Itemid=38#Cardio))   
+
+
+
 <img src="https://bytebucket.org/chia_hsu/trend/raw/fb28422bb0533953c364427db8315a33e0cd415b/docs/png/png_tutorial/1_trendmain.png?token=953a23fe763e1ee6450967e21d016d8d9e54f92e" alt="trendmain" width="600">  
 ### 1. Do PCA on the movie  
 Select the movie named as `cardiac-rtMRI.avi` in the unzippped 

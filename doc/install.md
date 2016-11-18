@@ -7,7 +7,8 @@ licensing, as well as the contact information for you and your laboratory.
 Await approval and an email message providing download access to the TREND 
 distributions.
 
-Though written in Python, TREND does not depend on a Python environment. The simple installation process merely creates shortcuts on the desktop and helps 
+Though written in Python, TREND does not depend on a Python environment. The 
+simple installation process merely creates shortcuts on the desktop and helps 
 set environment variables of for the text shell window that will make TREND 
 easy to use. The installation script places on the Desktop a directory 
 containing symbolic links to the executable files with GUI.  
@@ -94,7 +95,8 @@ usage, please see the document [`no_internet_connection.pdf`](./manual/no_intern
   use a shell other than `bash`. In this case, you need to set the path 
   environment variables yourself. e.g., modifying a shell configuration 
   file such as `.bashrc`, `.cshrc`, `.tcshrc`....  
-  #### Uninstalling or Moving
+  
+#### Uninstalling or Moving
 
 * Run `uninstall.bat` in Windows or `uninstall.script` in OS X and Linux.    
 * Then delete the `TREND-1.0-Win` ,`TREND-1.0-macOS`, or 

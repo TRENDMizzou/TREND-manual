@@ -47,47 +47,50 @@ of reaction by plotting principal components vs time.
 - Currently the `x axis` points in `xaxisfile` must be integer or floating point numbers, 
 therefore the time format must be converted.  
 - 1.1. Extract time information  
-	I. This can be done manually or running the following command in Linux or macOS terminal  
-	```bash
-	cat blckpac1.jdx |grep "TIME"|awk '{print $2}' > time.txt
-	```  
-
-	II. Then the `time.txt` contains the following lines:  
-	```bash
-	18:07:10.00
-	18:07:33.00
-	18:08:07.00
-	18:08:40.00
-	18:09:14.00
-	```  
+I. This can be done manually or running the following command in Linux or macOS terminal  
+```bash
+cat blckpac1.jdx |grep "TIME"|awk '{print $2}' > time.txt
+```  
+II. Then the `time.txt` contains the following lines:  
+```bash
+18:07:10.00
+18:07:33.00
+18:08:07.00
+18:08:40.00
+18:09:14.00
+```  
 
 - 1.2. Convert `time.txt` to `xaxisfile`  
-	I. Open `time.txt` using `Excel` or `OpenOffice`  
-	II. Convert time to seconds in `Excel`  
-	The time format in the A column is `hh:mm:ss.ff`, the simplest way 
-	is to convert time to second  
-	Then column B is time with the unit of second
+I. Open `time.txt` using `Excel` or `OpenOffice`  
+II. Convert time to seconds in `Excel`  
+The time format in the A column is `hh:mm:ss.ff`, the simplest way 
+is to convert time to second  
+Then column B is time with the unit of second
 <img src="../png/excel1.png" alt="excel1" width="600px">  
-
-	III. Calculate time change as difference between each time 
-	point to the first time point
+III. Calculate time change as difference between each time 
+point to the first time point
 <img src="../png/excel2.png" alt="excel1" width="300px">  
-	IV. Now save the column C to a file `x-axis.txt`, which will be used as 
-	`xaxisfile` for `trendmain` or `trendplot`  
-	```bash  
-	0.00
-	23.00
-	57.00
-	90.00
-	124.00
-	```  
+IV. Now save the column C to a file `x-axis.txt`, which will be used as 
+`xaxisfile` for `trendmain` or `trendplot`  
+```bash  
+0.00
+23.00
+57.00
+90.00
+124.00
+```  
 
 #### 2. Do PCA on the multi-block JCAMP-DX file  
-	2.1 First launch `trendmaingui`, and specify options according to the image  
+2.1 First launch `trendmaingui`, and specify options according to the image  
 <img src="../png/tutorial_aqua/2.png" alt="trendmaingui" width="600px">  
-	2.2 Press start button, TREND will run and finish soon   
-<img src="../png/tutorial_aqua/1.png" alt="trendmaingui" width="600px">  
-	2.3 After `trendmain` finishes, an HTML named as `Aquation-report.html` is generated. 
+2.2 Press start button, TREND will run and finish soon   
+<img src="../png/tutorial_aqua/1.png" alt="trendmaingui" width="600px">    
+The corresponding command is: 
+```bash
+trendmain.exe -f blckpac1.jdx -t jcamp -s noscaling  -x x-axis.txt -u second -o Aquation --report
+```
+
+2.3 After `trendmain` finishes, an HTML named as `Aquation-report.html` is generated. 
 <img src="../png/tutorial_aqua/report.png" alt="trendmaingui" width="800px">  
 
 Note TREND does not support reconstruction of JCAMP-DX now.  

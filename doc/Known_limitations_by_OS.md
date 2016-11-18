@@ -1,7 +1,7 @@
 # Known limitations by operating system
 
 ## macOS 10.12  
-- macOS Sierra applies very strict safety policy. It does not provide 
+- macOS Sierra is very strict in its safety policy. It does not provide 
 `Allow app downloaded from anywhere` option anymore. Therefore TREND may 
 fail to launch because of the following problem  
 <img src="../png/Sierra1.png" alt="error" width="300px">   
