@@ -1,6 +1,6 @@
 ## Table File formats read and reconstructed by TREND<sup>$</sup>  
 
-<img src="../../png/table_format.png" alt="File format table" width="600px">  
+<img src="../png/table_format.png" alt="File format table" width="600px">  
 
 \$ See [TREND manual](./manual.md) for details.   
 \* Currently the processed spectra must be saved by setting processing number as 1.  

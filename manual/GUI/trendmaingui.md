@@ -1,9 +1,3 @@
-## Introduction to Graphic User Interface of TREND  
-### Description:  
-Both GUI and command-line versions of TREND are available. The arguments 
-and usages of GUI panels are briefly introduced below. Detailed explainations 
-of choices of arguments and parameters are provided in the [manual for 
-command-line versions](./manual.md).  
 ### Trendmain - Obtain Principal Components from a series of 2D Measurements
 - Launch using `trendmaingui.exe` or `trendmaingui.app`. In the  left side 
 bar, there are for different modes to choose from: **`basic`**, **`all_purpose`**, 
@@ -84,45 +78,3 @@ The numberic format for setting the start and end time can either
 be floating point numbers of seconds (e.g. `0.2`), or `hh:mm:ss.ff`, such as 
 `00:03:05.00`. The default values for the `starttime` and `endtime` are 
 `0.0` and `end`, which do not trim the movie.   
-### Trendplot -- display the principal components identified by the main script
-- The program for plotting with GUI is `trendplotgui.exe` in Windows and 
-Linux, or `trendplotgui.app` ini OS X. The `report` option of the main 
-script generates an HTML report including several figures including the 
-first 3 PCs and scree plot, `trendplotgui` non-essential for visualizaing 
-results. However, `trendplotgui.exe` provides more control of plotting, 
- such as choices of kinds of normalization and single components to plot.   
-<img src="https://bytebucket.org/chia_hsu/trend/raw/72cf7b768324cb6311286619394581b4eea5558f/docs/png/png_gui/Png5_trendplotPCA.png?token=f6e6435856eb1c05bd6911f218319fbd00ef99f1" width="600" alt="pca">  
-- There are two modes `trendplotgui`: PCA and ICA.. It is critical to select 
-the appropriate mode.  
-- **`pca`** mode: The V<sup>T</sup> matrix and S matrix are needed for plotting PCA results. 
-These matrices can be selected using the `vtmatrix` and `smatrix` file 
-choosers. However, there is an easier way: Setting `readparm` to `Yes` 
-will read the arguments that `trendmain` used and automatically locate 
-the matrices as well as the choices of `xaxis` and `xunit`. `pcn` sets 
-the first N PCs to be plotted. When the `single` checkbox is turned on, 
-`pcn` just plot the N<sup>th</sup> PC. The type of normalization can be selected by 
-setting `normalmode` according to Table 1 of the [manual](./manual.md).  
-- **`ica`** mode is very similar to **`pca`** mode, but does not read `smatrix` 
-or show a scree plot.  
-]<img src="https://bytebucket.org/chia_hsu/trend/raw/72cf7b768324cb6311286619394581b4eea5558f/docs/png/png_gui/Png6_trendplot_ICA.png?token=b40217c3228e0dd9440e68fd9c610bd1a42980cd" alt="ica" width="600">   
-### Trendreconstruct - Use the PCA calculations to reconstruct features in the sereis of 2D measurements  
-`trendreconstructgui.exe` in Windows and Linux or `trendreconstruct.app` 
-in OS X is the program with GUI that uses the results from `trendmaingui.exe` 
-to reconstruct single or multiple PC representations of the original 
-series of 2D measurements. It is quite self-explanatory. The 
-[manual](./manual.md) provides more details.  
-<img src="https://bytebucket.org/chia_hsu/trend/raw/72cf7b768324cb6311286619394581b4eea5558f/docs/png/png_gui/Png7_trendreconstruct.png?token=36161555615b4cdd12608a876f1e96ea64782cf4" alt="reconstruct" width="600">  
-`trendreconstructgui` reads  parameters and results from `trendmain` or 
-`trendmaingui`. A PCA calculation must be carried out by `trendmain` with the 
-`reconstruction` option turned on. 
-`trendmaingui` reads number of components to use in reconstruction by 
-entering strings in the `--pcn` text box. The syntax it uses is 
-equivalent to specifying pages in a print dialog. For example, `1` means 
-reconstruct the 2D measurements using only the first component, while `2` 
-uses the second component only. `1, 3-5, 7` means reconstruction by 
-components 1, 3, 4, 5, 7.  
-When performing reconstruction of a 
-PNG image series, choosing to export the `original format` will actually
- generate an `mp4` movie clip. Choosing the `PNG` option instead plots 
- reconstructed images.  
-
