@@ -16,12 +16,16 @@
 
 * #### Description
 
-  `trendreconstruct.exe` rebuilds the original 2D measurements using the first
+  - `trendreconstruct.exe` rebuilds the original 2D measurements using the first
      N principal components or the N<sup>th</sup> principal component obtained from the 
      main script. The script `trendreconstruct.exe` requires that the 
      `--reconstruct` option be turned on when using `trendmain.exe`. Normally 
      `trendmain.exe` will not save the files needed for PCA reconstruction unless
      the  `--reconst` option is used.
+  - Note that everytime when `trendmaingui` or `trendmain` launches it creates 
+  a temp directory to save temporary files for `trendplot` and `trendreconstruct` and 
+deletes the old one (if it exists). Therefore, `trendplot` and 
+`trendreconstruct` processes are based on the last run of `trendmain` or `trendmaingui`.   
 
 * #### Options
 

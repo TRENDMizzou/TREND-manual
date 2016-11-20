@@ -25,7 +25,7 @@ S matrix, etc), and illustrations of the scree plot, normalized PC1,
 first 3 PCs, and autocorrelation coefficents.  
 <img src="../../png/png_gui/Png2_trendallpurpose.png" alt="all_purpose" width="600">   
 - The **`all_purpose`** menu provides additional options. When the `reconst` 
-otpion is turned on, temporary files are saved for later use in 
+option is turned on, temporary files are saved for later use in 
 reconstruction of the data from the components specified.  Scaling of 
 columns can be specified, but should not be necessary if the rows are 
 scaled. If the input file type is Fourier-Transformed NMR spectrum 

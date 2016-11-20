@@ -5,8 +5,8 @@ script generates an HTML report including several figures including the
 first 3 PCs and scree plot, `trendplotgui` non-essential for visualizaing 
 results. However, `trendplotgui.exe` provides more control of plotting, 
  such as choices of kinds of normalization and single components to plot.   
-- Note everytime when `trendmaingui` launches it creates a temp directory to
-to save temporary files for `trendplotgui` and `trendreconstructgui` and 
+- Note that everytime when `trendmaingui` launches it creates a temp directory to
+save temporary files for `trendplotgui` and `trendreconstructgui` and 
 deletes the old one (if it exists). Therefore, `trendplotgui` and 
 `trendreconstructgui` processes are based on the last run of `trendmaingui`.   
 <img src="https://bytebucket.org/chia_hsu/trend/raw/72cf7b768324cb6311286619394581b4eea5558f/docs/png/png_gui/Png5_trendplotPCA.png?token=f6e6435856eb1c05bd6911f218319fbd00ef99f1" width="600" alt="pca">  
