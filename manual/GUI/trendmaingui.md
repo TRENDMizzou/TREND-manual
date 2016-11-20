@@ -10,7 +10,7 @@ things:  If input file names contain numbers, TREND can extract numbers
 from the file names and sort these names numerically. A corresponding 
 file index (`file.index`) will be generated automatically. Or you can 
 make a file index manually with a text editor according to the format 
-described in the [manual](./manual.md).  
+described in the [manual](../CLI/trendmain.md).  
 - File format, scaling methods (on row), prefix of output file names can 
 also be specified. The lower half of the panel shows optional arguments 
 which can be left blnak. A file list the tick marks for the x-axis can be 
@@ -31,7 +31,7 @@ columns can be specified, but should not be necessary if the rows are
 scaled. If the input file type is Fourier-Transformed NMR spectrum 
 (NMRPipe `ft2` format or Sparky `UCSF` format), the spectra can be 
 "binned" for compression or uniformity. The `bintimes` parameter for this 
- can be speicified. Detail descriptions can be found in the [manual](./manual.md). 
+ can be speicified. Detail descriptions can be found in the [manual](../CLI/trendmain.md). 
  In the **`all_purpose`** menu,  ICA (independent component analysis) can be selected instead of PCA. 
  When `ICA` is chosen, the number of independent components to be calculated 
 should be specified (Xu and Van Doren, submitted).  
@@ -45,14 +45,14 @@ a `dir` Directory Chooser widget is provided for the Topspin and VnmrJ
 data directories. Its usage is similar to the `file` File Chooser widget 
 described previously. A manually made directory index, which is 
 in the same form of `file.index` can still be read by the `file` File 
-Chooser for parsing Topspin and VnmrJ directories. See [manual](./manual.md) for details.  
+Chooser for parsing Topspin and VnmrJ directories. See [manual](../CLI/trendmain.md) for details.  
 <img src="../../png/png_gui/Png3_trendNMR.png" width="600" alt="trendnmr">    
 The default scaling method of rows of the data matrix is **auto**, which 
 is recommended for series of NMR spectra in fast or slow exchange 
 regimes. **pareto** is recommended for spectra with intermdiate exchange. 
 **noscaling** should be acceptable for all exchange regimes. Details of 
 choosing scaling method and setting the threshold to filter out noise are 
-given in the [manual](./manual.md) and [Jia Xu and Steven R. Van Doren, Binding Isotherms 
+given in the [manual](../CLI/trendmain.md) and [Jia Xu and Steven R. Van Doren, Binding Isotherms 
 and Time Courses Readily from Magnetic Resonance. *Anal. Chem.* 2016, 88 
 (16), pp 8172-8178](http://pubs.acs.org/doi/abs/10.1021/acs.analchem.6b01918)  
 `threshold` and `thresholdnumber` can be set for filtering noise out of 
@@ -64,7 +64,7 @@ the noise level for `autoscaling` and 0.5 times the noise level for
 `solventfilter` provides options of applying solvent filter to FID data, 
 **none**, **Gaussian**, **sine-bell**, **sine-bell-square** are provided. 
 **rectangular** filter is provided in the command-line mode. See the 
-[manual](./manual.md) for definitions of solvent filter.  
+[manual](../CLI/trendmain.md) for definitions of solvent filter.  
 <img src="../../png/png_gui/Png4_trendMovie.png" alt="movie" width="600">     
 - The **`movie`** menu is for processing movies or time-dependent PNG image 
 series. The recommended scaling method of rows is **noscaling**. A file 
@@ -73,7 +73,7 @@ movie, time will be automatically extracted from the movie and saved as
 `movie_time.txt` for use as x-axis. The movie (but not series of PNG 
 images) can be resized to make it smaller by skipping frames of the movie 
 and setting the parameters `compress` and `sparsity` according to the 
-[manual](./manual.md). TREND can select a certain portion of a movie by setting `starttime` and `endtime` parameters. 
+[manual](../CLI/trendmain.md). TREND can select a certain portion of a movie by setting `starttime` and `endtime` parameters. 
 The numberic format for setting the start and end time can either 
 be floating point numbers of seconds (e.g. `0.2`), or `hh:mm:ss.ff`, such as 
 `00:03:05.00`. The default values for the `starttime` and `endtime` are 

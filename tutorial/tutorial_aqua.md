@@ -1,15 +1,15 @@
-## Tutorial: The Kinetics of Aqutaion of trans-[Co(en)<sub>2</sub>Cl<sub>2</sub>]<sup>+</sup>
+## Tutorial: Kinetics of Visible Spectra in one JCAMP-DX file: the Aquation of trans-[Co(en)<sub>2</sub>Cl<sub>2</sub>]<sup>+</sup>
 ### Introduction  
 - [JCAMP-DX](http://www.jcamp-dx.org) is an internationally accepted format 
-that is suitable for spectra collected from various spectroscopy instruments. 
-JCAMP-DX can be used to store a series of spectra using its multi **BLOCKS**   
-- Here is a simple example of analyzing kinetics of aquation of trans-[Co(en)
+that is suitable for spectra collected from a wide range of methods, spectroscopy, 
+and instrumentation. A single JCAMP-DX spectrum can store a series of spectra using multi **BLOCKS**   
+- Here is a simple example of obtaining the kinetics of aquation of trans-[Co(en)
 <sub>2</sub>Cl<sub>2</sub>]<sup>+</sup> from a single JCAMP-DX 
 [file](http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/blckpac1.jdx), 
-which includes a series Vis spectra using 5 data blocks  
-- More examples of JCAMP-DX data can be found in [http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/index.html](http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/index.html)
-- Basic information of the experiments can be found in the header of the 
-downloaded [`blckpac1.jdx`](http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/blckpac1.jdx) file.  
+which includes a series absorbance (Vis) spectra using 5 data blocks.    
+- More examples of JCAMP-DX data can be found at [http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/index.html](http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/index.html)
+- Basic information on the experiments can be found in the header of the 
+downloaded [`blckpac1.jdx`](http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/blckpac1.jdx) file:  
 ```bash
 ##TITLE= Aquation of trans-[Co(en)2Cl2]+
 ##DATA TYPE= LINK
@@ -27,27 +27,32 @@ downloaded [`blckpac1.jdx`](http://wwwchem.uwimona.edu.jm:1104/spectra/testdata/
 ##SPECTROMETER/DATA SYSTEM= PERKIN-ELMER LAMBDA 19 UV/VIS/NIR UV
 ```  
 
-- The Vis spectra series can be visualized as:   
+- The Vis spectra series are displayed here with their time stamps:  
 <img src="../png/Vis.jpg" width="600px" alt="Vis Spectra">
 
 
 
 ### Steps
 #### 1. Prepare `xaxisfile` by extracting time information from all blocks (Optional)  
-- The aquation of trans-[Co(en)<sub>2</sub>Cl<sub>2</sub>]<sup>+</sup> is 
-a time-dependent reaction. The experiment time of each block was shown 
-by the `##TIME` flag, such as  
+- The time courses of the aquation of trans-[Co(en)<sub>2</sub>Cl<sub>2</sub>]<sup>+</sup> 
+was recoreded in this example. This time at which 
+each spectrum(block) was collected is given  
+by the `##TIME` field, for example:   
 ```bash
 ##TIME= 18:07:10.00
 ```   
 
-- Although TREND does not need time information to perform PCA analysis on 
-this kinetic experiment, it will be helpful to visualize the time-course 
-of reaction by plotting principal components vs time.  
-- Currently the `x axis` points in `xaxisfile` must be integer or floating point numbers, 
-therefore the time format must be converted.  
+- Although TREND does not need the temporal information to perform PCA analysis on 
+this kinetic experiment, it will be needed to plot the time-course 
+of the reaction with its time scale.  
+- Since the `x axis` points in `xaxisfile` must be integer or 
+floating point numbers, these need to be extracted from the 
+JCAMP-DX (`.jdx` or `.dx`) file.  
+
+
 - 1.1. Extract time information  
-I. This can be done manually or running the following command in Linux or macOS terminal  
+I. This can be done manually or running the following command in a Linux 
+or macOS terminal using this syntax:   
 ```bash
 cat blckpac1.jdx |grep "TIME"|awk '{print $2}' > time.txt
 ```  
@@ -64,8 +69,9 @@ II. Then the `time.txt` contains the following lines:
 I. Open `time.txt` using `Excel` or `OpenOffice`  
 II. Convert time to seconds in `Excel`  
 The time format in the A column is `hh:mm:ss.ff`, the simplest way 
-is to convert time to second  
-Then column B is time with the unit of second
+is to convert time to units of seconds in column B, using the formula 
+depicted. This may require first setting the format of the cells of 
+column B to "general".  
 <img src="../png/excel1.png" alt="excel1" width="600px">  
 III. Calculate time change as difference between each time 
 point to the first time point
@@ -81,16 +87,19 @@ IV. Now save the column C to a file `x-axis.txt`, which will be used as
 ```  
 
 #### 2. Do PCA on the multi-block JCAMP-DX file  
-2.1 First launch `trendmaingui`, and specify options according to the image  
+2.1 First launch `trendmaingui`, and specify options as illustrated in the menu:  
 <img src="../png/tutorial_aqua/2.png" alt="trendmaingui" width="600px">  
-2.2 Press start button, TREND will run and finish soon   
+2.2 Press the `Start` button, TREND will run quickly, resulting in text 
+appearing in the window as shown:   
 <img src="../png/tutorial_aqua/1.png" alt="trendmaingui" width="600px">    
 The corresponding command is: 
 ```bash
 trendmain.exe -f blckpac1.jdx -t jcamp -s noscaling  -x x-axis.txt -u second -o Aquation --report
 ```
 
-2.3 After `trendmain` finishes, an HTML named as `Aquation-report.html` is generated. 
+2.3 After `trendmain` finishes, a report in HTML format appears, and in this example is named
+`Aquation-report.html`.  Its scree plot (a bar chart) indicates that there is only principal 
+component.   
 <img src="../png/tutorial_aqua/report.png" alt="trendmaingui" width="800px">  
 
-Note TREND does not support reconstruction of JCAMP-DX now.  
+Note that TREND does not currently support reconstruction of JCAMP-DX files.

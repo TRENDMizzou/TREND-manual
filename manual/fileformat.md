@@ -2,7 +2,7 @@
 
 <img src="../png/table_format.png" alt="File format table" width="600px">  
 
-\$ See [TREND manual](./manual.md) for details.   
+\$ See [TREND manual](CLI/trendmain.md) for details.   
 \* Currently the processed spectra must be saved by setting processing number as 1.  
 \*\* In order to make phasefile readable by third-party software including TREND, set trace=’f1’,
  display the full spectrum, and use the VnmrJ `flush` command are required. Otherwise the phasefile

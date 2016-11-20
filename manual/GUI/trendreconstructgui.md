@@ -3,7 +3,7 @@
 in OS X is the program with GUI that uses the results from `trendmaingui.exe` 
 to reconstruct single or multiple PC representations of the original 
 series of 2D measurements. It is quite self-explanatory. The 
-[manual](./manual.md) provides more details.  
+[manual](../CLI/trendreconstruct.md) provides more details.  
 <img src="https://bytebucket.org/chia_hsu/trend/raw/72cf7b768324cb6311286619394581b4eea5558f/docs/png/png_gui/Png7_trendreconstruct.png?token=36161555615b4cdd12608a876f1e96ea64782cf4" alt="reconstruct" width="600">  
 `trendreconstructgui` reads  parameters and results from `trendmain` or 
 `trendmaingui`. A PCA calculation must be carried out by `trendmain` with the 
