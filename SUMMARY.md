@@ -24,11 +24,10 @@ bui# Summary
 	* [Initial uses without internet](manual/no_internet_connection.md)
 ------
 * [Tutorials](tutorial/README.md)  
-	* [Time courses oof breathing and heart beat from MRI movie](tutorial/tutorial.md)
+	* [Time courses of breathing and heart beat from MRI movie](tutorial/tutorial.md)
 	* [Reaction time course from absorbance spectra in JCAMP-DX file](tutorial/tutorial_aqua.md)
 ------
 * About TREND
 	* [How to cite](doc/how_to_cite.md)
-	* [Coming soon](doc/new_features.md)
-	* [New features](doc/ChangeLog.md)
+	* [New features](doc/new_features.md)
 

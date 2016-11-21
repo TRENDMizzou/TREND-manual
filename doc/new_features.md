@@ -1,4 +1,4 @@
-## Coming soon (2016-11-21)
+## Coming soon (2016-11-22)
 
 ### `trendmaingui` and `trendmain`  
 - Supports Bruker Topspin FID/spectra, Agilent(Varian) FID/Spectra
