@@ -22,7 +22,7 @@ calculations using `trendmain` and `trendreconstruct` trigger the download
 and installation of two pieces of software from the public domain for 
 handling movies and images. This download requires both a reliable internet 
 connection and access to github. If this access is lacking upon initial 
-usage, please see the document [`no_internet_connection.pdf`](./manual/no_internet_connection.md)
+usage, please see the document [`no_internet_connection.pdf`](../manual/no_internet_connection.md)
 
 #### Windows 7 or above
 

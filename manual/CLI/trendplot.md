@@ -16,10 +16,10 @@
   - `trendplot.exe` plots the output of `trendmain.exe`. It is normally used to plot 
   first principal component (PC1) or n principal components. It can also graph a 
   scree plot of the sizes of the PCs. It uses matplotlib.
-  - Note that everytime when `trendmaingui` or `trendmain` launches it creates 
-  a temp directory to save temporary files for `trendplot` and `trendreconstruct` and 
-deletes the old one (if it exists). Therefore, `trendplot` and 
-`trendreconstruct` processes are based on the last run of `trendmain` or `trendmaingui`.   
+  - Note that each time `trendmaingui` or `trendmain` launches it creates 
+  a temp directory to save temporary files for `trendplot` and `trendplotgui` and 
+deletes the old one (if it exists). This enables `trendplot` and 
+`trendplotgui` to use results of the last run of `trendmain` or `trendmaingui`.   
 
 * #### Options
 

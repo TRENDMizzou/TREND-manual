@@ -1,8 +1,9 @@
 ## TREND: TRack Equilibrium or Non-equilibrium shifts in Data
 ### Resolve Trends such as Binding Isotherms and Time Courses Directly from Spectra, Imaging, or Lists
-Current version `0.6.9.5`, to see its documentation please go to 
+Version 1.0
+For further information, see 
 [biochem.missouri.edu/trend](http://biochem.missouri.edu/trend)  
-New version is coming next week (2016-11-21)  
+The new release is available 2016-11-21   
 ### Introduction:
 TREND is a software package that determines the main trend(s) of change across a series of 2D
 digital measurements, such as imaging and NMR spectra. TREND works by applying principal component

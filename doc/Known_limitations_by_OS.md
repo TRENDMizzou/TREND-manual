@@ -1,6 +1,6 @@
 # Known limitations by operating system
 
-## macOS 10.12  
+## macOS 10.12 (Sierra)
 - macOS Sierra is very strict in its safety policy. It does not provide 
 `Allow app downloaded from anywhere` option anymore. Therefore TREND may 
 fail to launch because of the following problem  
@@ -21,7 +21,7 @@ see [https://www.tekrevue.com/tip/gatekeeper-macos-sierra/](https://www.tekrevue
 sudo spctl --master-disable  
 ```  
 
-## OS X 10.11
+## OS X 10.11 (El Capitan)
 - The strict safety precautions of El Capitan prevent double clicking or 
 use of the open command in terminal from launching TREND apps. The TREND 
 apps may nonetheless be launched in a terminal (text) window. To enable 

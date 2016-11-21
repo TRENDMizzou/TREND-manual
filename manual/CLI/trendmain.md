@@ -1,6 +1,6 @@
 ### Main Script - Obtain Principal Components from a series of 2D Measurements
 
-* #### Both GUI (Graphic User Interface) and CLI (Command Line Interface) programs
+* #### This describes the options of the CLI (Command Line Interface) program (which underline the  GUI version described above)  
 
   GUI: `trendmaingui.exe` in Windows and Linux, `trendmaingui.app` in OS X
 
@@ -221,7 +221,7 @@
     `--columnscaling` specifies the scaling method applied on columns of the 
     data matrix. Options and meanings of scaling methods are defined in the `-s`
     option. By default `--columnscaling` is set as [none].   
-  * `--solventfilter [none/Gaussian/sine-bell/sine-square-bell]`  
+  * `--solventfilter [none/Gaussian/sine-bell/sine-bell-square]`  
   	`--solventfilter` applies solvent filter to FID signals in `fid`, 
 	`brukerfid`, `agilentfid` and `jcamp-dx` format    
 	**none** means no water filter will be applied   
@@ -290,7 +290,7 @@
     which means 3 minutes and 5 seconds.  
   * `--endtime [end time]`  
     This option sets the ending time for the subclip of input movie. By default 
-    it is set as `end`. When `--starttime` and `--endtime` are set as default, 
+    it is set as `end`. When `--starttime` and `--endtime` are set as the default 
     (`0.0` and `end`, respectively), the whole input video will be analyzed. 
     Otherwise a subclip video will be analyzed and exported as `from-starttime-to-endtime_movieclip.mp4`, 
     or `from-starttime_movieclip.mp4` if the `--endtime` is set as the default `end`.  

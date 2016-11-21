@@ -1,19 +1,21 @@
-### Trendreconstruct - Use the PCA calculations to reconstruct features in the sereis of 2D measurements  
+### Trendreconstruct - Use the PCA calculations to reconstruct features in the series of 2D measurements  
 - `trendreconstructgui.exe` in Windows and Linux or `trendreconstruct.app` 
 in OS X is the program with GUI that uses the results from `trendmaingui.exe` 
 to reconstruct single or multiple PC representations of the original 
 series of 2D measurements. It is quite self-explanatory. The 
 [manual](../CLI/trendreconstruct.md) provides more details.  
-- Note that everytime when `trendmaingui` launches it creates a temp directory 
+- Note that each time when `trendmaingui` launches it creates a temp directory 
 to save temporary files for `trendplotgui` and `trendreconstructgui` and 
-deletes the old one (if it exists). Therefore, `trendplotgui` and 
-`trendreconstructgui` processes are based on the last run of `trendmaingui`.   
+deletes the old one (if it exists). This prepares 
+`trendreconstructgui` processes to read the output of the most recent 
+run of `trendmaingui`.   
 <img src="https://bytebucket.org/chia_hsu/trend/raw/72cf7b768324cb6311286619394581b4eea5558f/docs/png/png_gui/Png7_trendreconstruct.png?token=36161555615b4cdd12608a876f1e96ea64782cf4" alt="reconstruct" width="600">  
-- `trendreconstructgui` reads  parameters and results from `trendmain` or 
-`trendmaingui`. A PCA calculation must be carried out by `trendmain` with the 
+- Since `trendreconstructgui` reads parameters and results from `trendmain` or 
+`trendmaingui`, a PCA calculation must first be carried out by `trendmain` 
+or `trendmaingui` with the 
 `reconstruction` option turned on. 
-`trendmaingui` reads number of components to use in reconstruction by 
-entering strings in the `--pcn` text box. The syntax it uses is 
+`trendmaingui` reads the components to use in reconstruction from the 
+`--pcn` text box. The syntax it uses is 
 equivalent to specifying pages in a print dialog. For example, `1` means 
 reconstruct the 2D measurements using only the first component, while `2` 
 uses the second component only. `1, 3-5, 7` means reconstruction by 
