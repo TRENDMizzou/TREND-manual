@@ -26,8 +26,10 @@ bui# Summary
 * [Tutorials](tutorial/README.md)  
 	* [Time courses of breathing and heart beat from MRI movie](tutorial/tutorial.md)
 	* [Reaction time course from absorbance spectra in JCAMP-DX file](tutorial/tutorial_aqua.md)
-------
-* About TREND
+	* [Temperature dependence from Bruker spectra in JCAMP-DX files](tutorial/tutorial_multijcamp.md)  
+	* [Binding isotherms from unprocessed agilent_FID](tutorial/tutorial_agilent.md) 
+------ 
+* About TREND   
 	* [How to cite](doc/how_to_cite.md)
 	* [New features](doc/new_features.md)
 

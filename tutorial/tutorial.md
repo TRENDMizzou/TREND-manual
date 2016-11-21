@@ -27,7 +27,7 @@ To do this at the  command line, use `trendplot.exe -r -e -n 2`
 When `trendplotgui` finishes, PC1 and PC2 are plotted. It is clear that 
 PC1 represents time course of two breaths and that PC2 tracks the cardiac 
 osciallation between diastole and systole.  
-]<img src="https://bytebucket.org/chia_hsu/trend/raw/6f17d3f8ebc22cb203e0266265299f6ae1debbd1/docs/png/png_tutorial/3_2PCs.png?token=3a61ee2abf72217a3b420464512df1cc982057d2" alt="PC1and2" width="800">    
+<img src="https://bytebucket.org/chia_hsu/trend/raw/6f17d3f8ebc22cb203e0266265299f6ae1debbd1/docs/png/png_tutorial/3_2PCs.png?token=3a61ee2abf72217a3b420464512df1cc982057d2" alt="PC1and2" width="800">    
 From the scree plot we can find that PC1 and PC2 contribute to ~50% of 
 the total variance.  
 <img src="https://bytebucket.org/chia_hsu/trend/raw/dab91cf79d3c63afc2adba946d3fd894f0b054ae/docs/png/png_tutorial/4_scree.png?token=fa5380d3615f324e1be0f8d2aa9e611fa46e5cd6" alt="scree" width="600">    
