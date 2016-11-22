@@ -13,13 +13,13 @@ converted into `JCAMP-DX` files by Bruker Topspin and processed by TREND
 - In topsin, open the dataset to save,  Run `tojdx` command, or choose 
 File -> Save menu, choose `Save data set in a JCAMP-DX file`.  
 <img src="../png/tutorial_multi_jcamp/tojdx.png" width="400px">  
-- Then set `Type of archive file` as `JCAMP IDFF/DUP`, which is an data 
+- Then set `Type of archive file` as `JCAMP IDFF/DUP`, which is a data 
 compression method 
-- Set "Include these data types" as "RSPEC", which means only real part 
+- Set "Include these data types" as "RSPEC", which means only the real part 
 spectra will be saved. (Topspin does not support saving complex part of 
 2D and higher dimensional data).  
 <img src="../png/tutorial_multi_jcamp/tojdx2.png" width="400px">  
-- The obtained JCAMP-DX file contains all spectra parameters, such as 
+- The resulting JCAMP-DX file contains all of the spectral parameters, such as 
 ```bash
 ##TITLE=2H, 15N phosphorylated PMM 49.2 mg/mL
 130uL Protein+ 14uL D2O+ 1.5 uL 1M DTT
@@ -49,7 +49,7 @@ $$ ##JCAMPDX= 5.01
 $$ ##ORIGIN= Bruker BioSpin GmbH
 $$ ##OWNER= jxzr4
 ```   
-However, only data blocks with `NTUPLE` flags are spectra data points, eg:  
+However, only data blocks with `NTUPLE` flags are spectra data points, e.g.:  
 ```bash 
 ##NTUPLES= nD NMR SPECTRUM
 ##VAR_NAME=  FREQUENCY1,    FREQUENCY2,      SPECTRUM
