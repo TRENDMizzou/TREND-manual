@@ -7,7 +7,7 @@ In each folder (e.g. `1.fid`), there are just 4 files, which are `fid`,
 <img src="../png/tutorial_agilent/1_fid.png" width="400px">     
 
 ### 1. (optional) make X axis file  
-create a `x-axis.conc` using any text editor in the following format:  
+create an `x-axis.conc` using any text editor in the following format:  
 ```bash
 0.0
 0.25
@@ -43,7 +43,7 @@ Here the default `Gaussian` is used.
 - Luanch and run `trendreconstructgui` using default parameters, 
 <img src="../png/tutorial_agilent/trendreconstructgui1.png" width="600px">   
 - A subfolder named as `reconst` (which is defined by the `output` option) 
-is generated, the subfolder contains the reconstructed FID series with 
+is generated. The subfolder contains the reconstructed FID series with 
 the same names of input files. They can be processed as the normal Agilent 
 FID data. 
 - The original `1.fid` has the spectrum as (processed by NMRPipe):    
