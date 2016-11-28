@@ -36,7 +36,7 @@ and read `x-axis.conc` file using `xaxis` text box. For the FID data,
 Here the default `Gaussian` is used.  
 - Press the 'Start' button, the html report will be generated if 
 `report` option is turned on.  
-<img src="../png/tutorial_agilent/report.png" width="600px">  
+<img src="../png/tutorial_agilent/report.png" width="650px">  
 
 
 ### 3. Reconstruct Agilent FID using only the first component  
