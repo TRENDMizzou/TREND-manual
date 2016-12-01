@@ -5,7 +5,7 @@
 - Add support to Red Hat Enterprise Linux Workstation 7  
 
 #### Bug fixes
-- Fix a bug that caused `trendrecosntructgui.exe` fails  
+- Fix a bug that caused `trendrecosntruct.exe` fails  
 
 ### Release 1.0.2
 #### Bug fixes
