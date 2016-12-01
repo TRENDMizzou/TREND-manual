@@ -32,7 +32,7 @@ at least temporarily until you have run each of the apps.
 ## OS X 10.7 to 10.8  
 - `GIF movie` option of `trendreconstruct` is not supported  
 
-## Fedora 23  
+## Fedora 23 and Ubuntu 16.04  
 - `trendmain` and `trendreport` are not able to launch web browser to 
 open `-report.html` automatically  
 

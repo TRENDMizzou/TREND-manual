@@ -1,11 +1,11 @@
 ## Change Log
 
-### Release 1.1.0 (to be released by 2016-12-01)
+### Release 1.1.0 
 #### New Features and Improvements
-- Add support to Red Hat Enterprise Linux Workstation 7  
+- Add support to Red Hat Enterprise Linux Workstation 7  (coming soon)
 
 #### Bug fixes
-- Fix a bug that caused `trendrecosntruct.exe` fails  
+- Fix a bug that caused `trendrecosntruct.exe` fail  
 
 ### Release 1.0.2
 #### Bug fixes

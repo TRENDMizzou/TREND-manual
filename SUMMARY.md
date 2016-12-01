@@ -17,7 +17,7 @@ bui# Summary
 	* [Command Line Interface](manual/CLI/README.md)
 		* [Calculate components](manual/CLI/trendmain.md)
 		* [Plot components](manual/CLI/trendplot.md)
-		* [reconstruct measurements from components](manual/CLI/trendreconstruct.md)
+		* [Reconstruct measurements from components](manual/CLI/trendreconstruct.md)
 		* [other](manual/CLI/other.md)
 	* [File Formats Supported](manual/fileformat.md)
 	* [Known Limitations by OS](doc/Known_limitations_by_OS.md)

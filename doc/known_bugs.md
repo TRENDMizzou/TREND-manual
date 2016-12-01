@@ -7,4 +7,4 @@
 - ~~HTML report fails when When `x-axis` option is selected for ICA calculation~~
 
 ### [1.0.2]
-- Command Line `trendreconstruct.exe` does not work  
+- ~~Command Line `trendreconstruct.exe` does not work~~
