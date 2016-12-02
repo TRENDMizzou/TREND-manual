@@ -50,7 +50,9 @@ saved as directories, in contrasting them with the other formats that
 save data as individual files. Therefore 
 a `dir` Directory Chooser widget is provided for the Topspin and VnmrJ 
 data directories. Its usage is similar to the `file` File Chooser widget 
-described previously. A manually made directory index, which is 
+described previously. Note space is **NOT** allowed in the Topspin or VnmrJ 
+directory names. 
+A manually made directory index, which is 
 in the same form of `file.index` can still be read by the `file` File 
 Chooser for parsing Topspin and VnmrJ directories. See [manual](../CLI/trendmain.md) for details.  
 <img src="../../png/png_gui/Png3_trendNMR.png" width="600" alt="trendnmr">    

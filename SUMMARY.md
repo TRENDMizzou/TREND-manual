@@ -32,6 +32,6 @@ bui# Summary
 * About TREND   
 	* [How to cite](doc/how_to_cite.md)
 	* [New features](doc/new_features.md)
-	* [Known bugs](doc/known_bugs.md)
+	* [Bugs & Known Issues](doc/known_bugs.md)
 	* [Change Log](doc/ChangeLog.md)
 
