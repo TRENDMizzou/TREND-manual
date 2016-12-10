@@ -36,4 +36,9 @@ at least temporarily until you have run each of the apps.
 - `trendmain` and `trendreport` are not able to launch web browser to 
 open `-report.html` automatically  
 
+## Linux distributions  
+- `trendmaingui` may hang when browser launches to show HTML report (if 
+`report` option is turned on). If this happens just close the browser and 
+GUI of `trendmaingui` will recover.  
+
 If you have any question, please contact <trendmizzou@gmail.com>

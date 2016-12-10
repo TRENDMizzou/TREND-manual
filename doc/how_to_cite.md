@@ -5,6 +5,6 @@
   http://pubs.acs.org/doi/abs/10.1021/acs.analchem.6b01918)   
       and   
   Jia Xu and Steven R. Van Doren, Tracking Equilibrium and Non-equilibrium 
-Shifts in Data with TREND. Submitted.
+Shifts in Data with TREND. _Biophys. J._ 2017, in press
 
 
