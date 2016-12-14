@@ -35,7 +35,12 @@ scaled. If the input file type is Fourier-Transformed NMR spectrum
  can be speicified. Detail descriptions can be found in the [manual](../CLI/trendmain.md). 
  In the **`all_purpose`** menu,  ICA (independent component analysis) can be selected instead of PCA. 
  When `ICA` is chosen, the number of independent components to be calculated 
-should be specified (Xu and Van Doren, submitted).  
+should be specified (
+  [Jia Xu and Steven R. Van Doren, Tracking Equilibrium and Non-equilibrium 
+Shifts in Data with TREND. _Biophys. J._ 2017,
+http://dx.doi.org/10.1016/j.bpj.2016.12.018](http://dx.doi.org/10.1016/j.bpj.2016.12.018))  
+
+
 The **`all_purpose`** menu supports various formats, including **JCAMP-DX**, which 
 is a general format for exchanging and archiving data from many instruments, 
 inlcuding but not limited ot IR, Raman, Uv-Vis, Fluroescence, NMR, EMR,
