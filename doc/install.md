@@ -80,9 +80,12 @@ usage, please see the document [`no_internet_connection.pdf`](../manual/no_inter
   ```
 
 
-#### Linux 64-bit, such as recent Ubuntu 14.04, Fedora 23 and later
-
-* Unzip the `TREND-1.0-Ubuntu14.04.tar.gz` by entering the command 
+#### Linux 64-bit, including Ubuntu 14.04, 16.04, Fedora 23 and later, 
+RedHat/CentOS 7.x (7.1 and later), CentOS 6.x (6.5 and later)  
+* Unzip the `TREND-1.0-Ubuntu14.04.tar.gz` (The string `Ubuntu14.04` 
+can be any 
+other Linux distribution such as `RHEL7.1` or `Ubuntu16.04`) by 
+entering the command 
   `tar -xzvf TREND-1.0-Ubuntu14.04.tar.gz` within a terminal shell.  
 * Enter `./install.script` within the terminal shell to add the current 
   TREND directory to the `PATH` environment variable. Three lines will be 
@@ -91,10 +94,20 @@ usage, please see the document [`no_internet_connection.pdf`](../manual/no_inter
   can be launched in terminal.  
 * Installation in Linux is similar to OS X, as the `install.script` is 
   written for `bash`, a shell that is the default in Mac OS X and many Linux 
-  distributions. However, a Linux computer may run without a desktop and may
+  distributions. 
+* However, a Linux computer may run without a desktop and may
   use a shell other than `bash`. In this case, you need to set the path 
   environment variables yourself. e.g., modifying a shell configuration 
   file such as `.bashrc`, `.cshrc`, `.tcshrc`....  
+  For example, if you want to install TREND on a CentOS 6.5 platform with 
+  `tcsh` or `csh` environment, just add the following 
+  lines to your `.cshrc` or `.tcshrc` files:  
+  ```bash
+  set path = ($path ~/your_directory/TREND-1.0-CentOS6.5/GUI)
+  set path = ($path ~/your_directory/TREND-1.0-CentOS6.5/GUI)
+  ```   
+  Replace `your_directory` with the paretn directory name of the 
+  TREND folder.  
   
 #### Uninstalling or Moving
 

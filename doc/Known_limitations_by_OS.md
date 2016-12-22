@@ -36,6 +36,20 @@ at least temporarily until you have run each of the apps.
 - `trendmain` and `trendreport` are not able to launch web browser to 
 open `-report.html` automatically  
 
+## RedHat/CentOS 7.x (7.1 and later), CentOS 6.x(6.5 and later)  
+`libxcb` must be `1.11` or newer. If your have an older `libxcb` library 
+(use `rpm -q libxcb` commande to check), please upgrade it. You can do 
+this using the command 
+```bash
+yum update libxcb
+``` as root   
+or 
+```bash
+sudo yum update lixcb
+``` if you have `sudo` privilege.  
+
+
+
 ## Linux distributions  
 - `trendmaingui` may hang when browser launches to show HTML report (if 
 `report` option is turned on). If this happens just close the browser and 
