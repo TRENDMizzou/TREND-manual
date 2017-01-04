@@ -127,7 +127,7 @@
       An example is a series of five .ucsf files named numerically. The index
       file can be named as `index.ucsf` and includes the following lines in 
       the example:  
-      <img src="https://bitbucket.org/repo/bboE8M/images/1070799385-file.index.png" alt="file.index" width="100">  
+      <img src="../../png/cli_manual/file.index.png" alt="file.index" width="100">  
       Another example is a series of Bruker Topspin directories on a 
       Windows machine. Absolute paths are supported, as well as relative 
       path, which is shown in the example of `UCSF` files. This 
@@ -138,7 +138,7 @@
       `1r` or `2rr` files from the `pdata1` subdirectorires. Therefore, 
       the number of the pdata subdirectory for processed files must 
 	  always be set as `1`.   
-      <img src="https://bytebucket.org/chia_hsu/trend/raw/a6b53994c9d44faaff51209d84ba153c3f7805e6/docs/png/png_manual/bruker-dir-index.png?token=c92c125dee2f271e853a31a14eefe9c72ed02195" alt="dir.index" width="400">     
+      <img src="../../png/cli_manual/bruker-dir-index.png" alt="dir.index" width="400">     
       `file.index` for Agilent VnmrJ format could be used in a simmilar manner, 
       except its spectra are saved in the `datdir` subdirectories.   
     * [filename] can be the name of a singlematrix data set or a movie file 
@@ -255,7 +255,7 @@
     `index` file specified by the  `-f [fileindex]` option of `trendmain.exe`  
     For example, `concentration.txt` lists the five concentrations of a 
     titration, one per line:   
-    <img src="https://bitbucket.org/repo/bboE8M/images/1883223853-concentration.txt.png" 
+    <img src="../../png/cli_manual/1883223853-concentration.txt.png" 
 	alt="concentration.txt" width="100">   
   * `-u [Unit]`   
     `-u` specifies label placed on the X-axis for plotting. [Unit] can be any 
