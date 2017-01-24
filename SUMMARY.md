@@ -7,8 +7,18 @@ bui# Summary
 ------
 * [Start using TREND](doc/start.md)
 	* [Installation Instructions](doc/install.md)  
-	* [A simple example](doc/intro.md)
+	* [A simple tutorial](doc/intro.md)
 ------
+* [Examples of trends resolved](examples/README.md)
+	* [Single Component](examples/single/README.md)
+		* [Sunset movie](examples/single/sunset.md)
+		* [simple binding isotherm for NMR](examples/single/simplebinding.md)
+		* [progress of reaction](examples/single/reaction.md)
+	* [Multiple Components](examples/multiple/README.md) 
+		* [chest MRI movie](examples/multiple/chest.md)
+		* [2-component isotherm + intermediate from NMR](examples/multiple/gcda.md)
+		* [clustering using bi-plot](examples/multiple/biplot.md)
+------ 
 * [Manual](manual/README.md)  
 	* [Graphic User Interface](manual/GUI/README.md)
 		* [Calculate components](manual/GUI/trendmaingui.md)
