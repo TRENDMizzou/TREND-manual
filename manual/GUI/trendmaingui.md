@@ -36,9 +36,8 @@ scaled. If the input file type is Fourier-Transformed NMR spectrum
  In the **`all_purpose`** menu,  ICA (independent component analysis) can be selected instead of PCA. 
  When `ICA` is chosen, the number of independent components to be calculated 
 should be specified (
-  [Jia Xu and Steven R. Van Doren, Tracking Equilibrium and Non-equilibrium 
-Shifts in Data with TREND. _Biophys. J._ 2017,
-http://dx.doi.org/10.1016/j.bpj.2016.12.018](http://dx.doi.org/10.1016/j.bpj.2016.12.018))  
+  [Jia Xu and Steven R. Van Doren, Tracking Equilibrium and Nonequilibrium 
+Shifts in Data with TREND. _Biophys. J._ 2017, 112,224-233](http://www.sciencedirect.com/science/article/pii/S0006349516343211)
 
 
 The **`all_purpose`** menu supports various formats, including **JCAMP-DX**, which 
