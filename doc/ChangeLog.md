@@ -2,7 +2,7 @@
 
 ### Release 1.1.0 
 #### New Features and Improvements
-- Add support to Red Hat Enterprise Linux Workstation 7  (coming soon)
+- Add support to Red Hat Enterprise Linux Workstation 7.1, CentOS 6.5, Ubuntu 16.04
 
 #### Bug fixes
 - Fix a bug that caused `trendrecosntruct.exe` fail  
