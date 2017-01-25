@@ -1,5 +1,5 @@
 # Mixed Exchange regimes with sequence of two ligand binding reactions  
-<img src='../../png/examples/gcda.jpeg' width=400>
+<img src='../../png/examples/gcda.jpeg' width=800>
 
 Principal components from SVD of spectra agree with the populations 
 estimated earlier by [line shape

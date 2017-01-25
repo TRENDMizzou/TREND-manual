@@ -1,4 +1,4 @@
-## Sunset movie  
+## Trajectory of a sunset using PCA  
 <video controls>
 <source src="../../png/examples/sunset.mp4", type="video/mp4">
 Your browser does not support playing MP4, please click this link to see 

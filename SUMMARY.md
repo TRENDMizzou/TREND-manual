@@ -13,7 +13,7 @@ bui# Summary
 	* [Single Component](examples/single/README.md)
 		* [Sunset movie](examples/single/sunset.md)
 		* [simple binding isotherm for NMR](examples/single/simplebinding.md)
-		* [progress of reaction](examples/single/reaction.md)
+		* [Time Course of fluid flow in the brain](examples/single/reaction.md)
 	* [Multiple Components](examples/multiple/README.md) 
 		* [chest MRI movie](examples/multiple/chest.md)
 		* [2-component isotherm + intermediate from NMR](examples/multiple/gcda.md)
