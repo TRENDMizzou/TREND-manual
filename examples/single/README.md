@@ -1,3 +1,3 @@
 * [Sunset movie](sunset.md)
-* [simple binding isotherm for NMR](simplebinding.md)
-* [progress of reaction](reaction.md)
+* [Simple binding isotherm for NMR](simplebinding.md)
+* [[Time course of fluid flow in the brain](reaction.md)
