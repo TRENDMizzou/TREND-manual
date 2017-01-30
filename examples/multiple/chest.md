@@ -1,8 +1,11 @@
 ## SVD extracts time courses of respiration and heart contraction from MRI movies
 <video controls>
 <source src="../../png/examples/movieS2-rtMRI-Joseph_Xu2016ACFig5B.mp4", type="video/mp4">
-Your browser does not support playing MP4 media, please click this link to see 
-the [AVI version](http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.6b01918/suppl_file/ac6b01918_si_003.avi)
+
+Visit <a href=https://trendmizzou.gitbooks.io/trend-manual/content/examples/multiple/chest.html> online manual</a> to play the MP4 movie, or click <a href=https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/movieS2-rtMRI-Joseph_Xu2016ACFig5B.gif?raw=true> this link </a> to play the GIF version.  
+
+<img src="https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/movieS2-rtMRI-Joseph_Xu2016ACFig5B.gif?raw=true" width = "400px">
+
 </video>
 
 SVD extracts the time course of pulsation in MRI movie of ascending aorta 
@@ -14,6 +17,10 @@ The red colored line traces time course of breating
 <video controls>
 <source src="../../png/examples/cardiac.mp4", type="video/mp4">
 Your browser does not support playing MP4 media, please click this link to see the [GIF version](https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/cardiac.gif?raw=true)  
+
+Visit <a href=https://trendmizzou.gitbooks.io/trend-manual/content/examples/multiple/chest.html> online manual</a> to play the MP4 movie, or click <a href=https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/cardiac.gif?raw=true> this link </a> to play the GIF version.  
+
+<img src="https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/cardiac.gif?raw=true" width = "400px">
 </video>
 
 
