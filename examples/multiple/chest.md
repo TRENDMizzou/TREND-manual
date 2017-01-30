@@ -4,7 +4,9 @@
 
 <img src="https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/movieS2_rtMRI_Joseph_Xu2016ACFig5B.gif?raw=true" width="400px">  
 
-Visit <a href=https://trendmizzou.gitbooks.io/trend-manual/content/examples/multiple/chest.html> online manual</a> to play the MP4 movie, or click <a href=https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/movieS2-rtMRI-Joseph_Xu2016ACFig5B.gif?raw=true> this link </a> to play the GIF version.  
+
+
+Visit <a href=https://trendmizzou.gitbooks.io/trend-manual/content/examples/multiple/chest.html> online manual</a> to play the MP4 movie, or click <a href=https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/movieS2_rtMRI_Joseph_Xu2016ACFig5B.gif?raw=true> this link </a> to play the GIF version.  
 
 </video>
 
