@@ -1,7 +1,7 @@
 ## SVD extracts time courses of respiration and heart contraction from MRI movies
 <video controls>
 <source src="../../png/examples/movieS2-rtMRI-Joseph_Xu2016ACFig5B.mp4", type="video/mp4">
-Your browser does not support playing MP4, please click this link to see 
+Your browser does not support playing MP4 media, please click this link to see 
 the [AVI version](http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.6b01918/suppl_file/ac6b01918_si_003.avi)
 </video>
 
@@ -13,7 +13,7 @@ The red colored line traces time course of breating
 
 <video controls>
 <source src="../../png/examples/cardiac.mp4", type="video/mp4">
-Your browser does not support playing MP4
+Your browser does not support playing MP4 media, please click this link to see the [GIF version](https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/cardiac.gif?raw=true)  
 </video>
 
 

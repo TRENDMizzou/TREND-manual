@@ -2,7 +2,7 @@
 <video controls>
 <source src="../../png/examples/sunset.mp4", type="video/mp4">
 Your browser does not support playing MP4, please click this link to see 
-the [GIF version](../../png/examples/sunset.gif)
+the [GIF version](https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/sunset.gif?raw=true)  
 </video>
 
 Capture of main time course of a sunset movie by PCA 
