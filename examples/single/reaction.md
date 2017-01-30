@@ -2,9 +2,9 @@
 <video controls>
 <source src="../../png/examples/movieS1-CSF-rtMRI_Xu2016ACFig5A.mp4", type="video/mp4">
 
-Visit <a href=https://trendmizzou.gitbooks.io/trend-manual/content/examples/single/reaction.html> online manual</a> to play the MP4 movie, or click <a href=https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/CSF.gif?raw=true> this link </a> to play the GIF version.  
-
 <img src="https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/CSF.gif?raw=true" width = "400px">
+
+Visit <a href=https://trendmizzou.gitbooks.io/trend-manual/content/examples/single/reaction.html> online manual</a> to play the MP4 movie, or click <a href=https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/CSF.gif?raw=true> this link </a> to play the GIF version.  
 
 
 SVD extracts the time course of pulsation in MRI movie of cerebral 

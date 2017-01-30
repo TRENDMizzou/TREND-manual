@@ -2,9 +2,9 @@
 <video controls>
 <source src="../../png/examples/sunset.mp4", type="video/mp4">
 
-Visit <a href=https://trendmizzou.gitbooks.io/trend-manual/content/examples/single/sunset.html> online manual</a> to play the MP4 movie, or click <a href=https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/sunset.gif?raw=true> this link </a> to play the GIF version.  
-
 <img src="https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/sunset.gif?raw=true" width = "400px">
+
+Visit <a href=https://trendmizzou.gitbooks.io/trend-manual/content/examples/single/sunset.html> online manual</a> to play the MP4 movie, or click <a href=https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/sunset.gif?raw=true> this link </a> to play the GIF version.  
 
 </video>
 

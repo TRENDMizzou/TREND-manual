@@ -11,5 +11,3 @@
 Clustering and resolution of ligand binding and other perturbations of PMM/PGM based on chemical shift vectors of TROSY spectra. 
 Dephosphorylation and mutation of phosphoSer108 to Cys are nearly orthogonal (Xu, J et al
 submitted)
-
-
