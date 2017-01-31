@@ -6,6 +6,8 @@
 
 Visit <a href=https://trendmizzou.gitbooks.io/trend-manual/content/examples/single/reaction.html> online manual</a> to play the MP4 movie, or click <a href=https://github.com/TRENDMizzou/TREND-manual/blob/master/png/examples/CSF.gif?raw=true> this link </a> to play the GIF version.  
 
+</video>
+
 
 SVD extracts the time course of pulsation in MRI movie of cerebral 
 spinal fluid flow 
