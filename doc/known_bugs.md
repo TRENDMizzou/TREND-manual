@@ -1,6 +1,9 @@
 ## Bugs 
 
 
+### [1.1.0] ~ [1.2.0]
+- `trendreconstructgui` and `trendreconstruct` fail to identify `complextxt` format  
+
 ### [1.0.0]
 - ~~HTML report fails when When `x-axis` option is selected for ICA calculation~~
 
