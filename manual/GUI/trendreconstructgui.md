@@ -9,7 +9,7 @@ to save temporary files for `trendplotgui` and `trendreconstructgui` and
 deletes the old one (if it exists). This prepares 
 `trendreconstructgui` processes to read the output of the most recent 
 run of `trendmaingui`.   
-<img src="https://bytebucket.org/chia_hsu/trend/raw/72cf7b768324cb6311286619394581b4eea5558f/docs/png/png_gui/Png7_trendreconstruct.png?token=36161555615b4cdd12608a876f1e96ea64782cf4" alt="reconstruct" width="600">  
+<img src="../../png/png_gui/Png7_trendreconstruct.png" alt="reconstruct" width="600">   
 - Since `trendreconstructgui` reads parameters and results from `trendmain` or 
 `trendmaingui`, a PCA calculation must first be carried out by `trendmain` 
 or `trendmaingui` with the 

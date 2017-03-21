@@ -9,7 +9,7 @@ of components to plot and how they should be normalized.
 save temporary files for `trendplotgui` and `trendreconstructgui` and 
 deletes the old one (if it exists). This poises  `trendplotgui` and 
 `trendreconstructgui` to read in the results from the last run of `trendmaingui`.   
-<img src="https://bytebucket.org/chia_hsu/trend/raw/72cf7b768324cb6311286619394581b4eea5558f/docs/png/png_gui/Png5_trendplotPCA.png?token=f6e6435856eb1c05bd6911f218319fbd00ef99f1" width="600" alt="pca">  
+<img src="../../png/png_gui/Png5_trendplotPCA.png" alt="pca" width="600">   
 - There are two modes of `trendplotgui`: PCA and ICA. It is critical to select 
 the appropriate mode.  
 - **`pca`** mode: The V<sup>T</sup> matrix and S matrix are needed for plotting PCA results. 
@@ -23,4 +23,4 @@ the first N PCs to be plotted.
 setting `normalmode` according to Table 1 of the [manual](../CLI/trendplot.md).  
 - **`ica`** mode is very similar to **`pca`** mode, but does not read `smatrix` 
 or show a scree plot.  
-]<img src="https://bytebucket.org/chia_hsu/trend/raw/72cf7b768324cb6311286619394581b4eea5558f/docs/png/png_gui/Png6_trendplot_ICA.png?token=b40217c3228e0dd9440e68fd9c610bd1a42980cd" alt="ica" width="600">   
+<img src="../../png/png_gui/Png6_trendplot_ICA.png" alt="ica" width="600">   
