@@ -49,7 +49,7 @@
     * **brukerfid** Bruker Topspin FID format (`fid` or `ser` file 
       in the experimental directory) 
     * **brukerspectra**  Bruker Topspin processed spectra (`1r` (1D) or 
-      `2rr` (2D) in the `1/pdata/` subdirectory in the experimental directory . 
+      `2rr` (2D) in the `/pdata/1` subdirectory in the experimental directory . 
       Note currently the processed spectra must be saved by setting 
       processing number as 1 in the Topspin experimental directory    
     * **agilentfid** Agilent VnmrJ (OpenVnmrJ) fid. (`fid` file in the 
