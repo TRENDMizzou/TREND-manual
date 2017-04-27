@@ -135,7 +135,7 @@
 	  **brukerspectra**. For 
       **brukerfid** data, TREND will read `fid` or `ser` data from the 
       listed directories. For **brukerspectra** data, TREND will read 
-      `1r` or `2rr` files from the `pdata1` subdirectorires. Therefore, 
+      `1r` or `2rr` files from the `pdata/1` subdirectorires. Therefore, 
       the number of the pdata subdirectory for processed files must 
 	  always be set as `1`.   
       <img src="../../png/cli_manual/bruker-dir-index.png" alt="dir.index" width="400">     
