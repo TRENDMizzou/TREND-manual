@@ -103,7 +103,7 @@ entering the command
   `tcsh` or `csh` environment, just add the following 
   lines to your `.cshrc` or `.tcshrc` files:  
   ```bash
-  set path = ($path ~/your_directory/TREND-1.0-CentOS6.5/GUI)
+  set path = ($path ~/your_directory/TREND-1.0-CentOS6.5/CLI)
   set path = ($path ~/your_directory/TREND-1.0-CentOS6.5/GUI)
   ```   
   Replace `your_directory` with the paretn directory name of the 
