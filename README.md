@@ -3,6 +3,7 @@
 Version 1.1.0  
 For further information, see 
 [biochem.missouri.edu/trend](http://biochem.missouri.edu/trend)  
+Also see [TREND NMR Pro](https://trendmizzou.gitbooks.io/trend_nmr-manual/content/)
 ### Introduction:
 TREND is a software package that determines the main trend(s) of change across a series of 2D
 digital measurements, such as imaging and NMR spectra. TREND works by applying principal component
