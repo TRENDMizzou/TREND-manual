@@ -93,7 +93,10 @@
     * **singleexcel**  Similar to `singlematrix` and `singlecsv` formats but
       in the `xlsx` or `xls` formats. Besides, a series of 1D or 2D dataset 
       can be stored in a single Excel file containing different, 
-      sequentially-ordered sheets.  
+      sequentially-ordered sheets.
+    * **PythonNPY** is a standard binary file format [NPY](https://docs.scipy.org/doc/numpy-1.14.1/neps/npy-format.html) for Python Numpy.  
+    * **Matlab**  MAT-Files. However the Matlab file should contain just 
+1 variable. See [save](https://www.mathworks.com/help/matlab/matlab_env/save-load-and-delete-workspace-variables.html) command of Matlab.   
     * **movie** Common video formats, such as `.ogv`, `.mp4`, `.mpeg`, 
       `.avi`, `.mov`, `.webm`   
     * **jcamp** JCAMP-DX is a general format for exchanging and archiving 
