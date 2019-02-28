@@ -24,9 +24,10 @@ handling movies and images. This download requires both a reliable internet
 connection and access to github. If this access is lacking upon initial 
 usage, please see the document [`no_internet_connection.pdf`](../manual/no_internet_connection.md)
 
+#### <p hidden>windows</p>
 #### Windows 7 or above
 
-* Unzip the `TREND-1.0-Win.7z` by [7zip](http://www.7-zip.org).  
+* Unzip the `TREND-1.x-Win.7z` by [7zip](http://www.7-zip.org).  
 * In the unzipped folder, double clicking `install.bat` will create a file
   named `TRENDterminal` and a folder on the desktop and start menu named 
   `TREND-GUI` containing `trendmaingui.exe`, `trendplotgui.exe`, and 
@@ -44,11 +45,13 @@ usage, please see the document [`no_internet_connection.pdf`](../manual/no_inter
 * Note the `.7z` tarball can be deleted but the unzipped folder should not
   be removed or deleted, since the installation step just creates shortcuts.  
 
+#### <p hidden>macos</p>
 #### Mac OS X 10.7.5 and later
-
-* Unzip the `TREND-1.0-macOS.tar.gz` by double clicking the file 
+* See [Known Limitations by OS](Known_limitations_by_OS.md) if TREND apps 
+can't be launched on OSX 10.11 and later  
+* Unzip the `TREND-1.x-macOS.tar.gz` by double clicking the file 
   displayed in the OS X GUI. Alternatively, run the command 
-  `tar -xzvf TREND-1.0-macOS.tar.gz` within a terminal shell.  
+  `tar -xzvf TREND-1.x-macOS.tar.gz` within a terminal shell.  
 * Open a terminal shell and `cd` to the unzipped folder named 
   `TREND-0.7.8.3-OSX`, enter the command `./install.script` to create a 
   `TREND-GUI` folder on the desktop, which contains `trendmaingui.app`, 
@@ -68,25 +71,26 @@ usage, please see the document [`no_internet_connection.pdf`](../manual/no_inter
 * If TREND was previously installed,  the old version will be uninstalled 
   before the new installation.  
 * `sudo` may be necessary if permission is required.  
-  An example: Download `TREND-1.0-macOS.tar.gz` to `~/Downloads/`  
+  An example: Download `TREND-1.x-macOS.tar.gz` to `~/Downloads/`  
 * If you are comfortable with shell terminal, you can just enter 
   `./change_path_env.script` to add the current TREND directory to `PATH` 
   environment variable. No permission is required.  
   ```bash
-  tar -xzvf TREND-1.0-macOS.tar.gz
-  cd ~/Downloads/TREND-1.0-macOS
+  tar -xzvf TREND-1.x-macOS.tar.gz
+  cd ~/Downloads/TREND-1.x-macOS
   ./install.script 
   (or sudo ./install.script if permission is required)
   ```
 
 
+#### <p hidden>linux</p>
 #### Linux 64-bit, including Ubuntu 14.04, 16.04, Fedora 23 and later, 
 RedHat/CentOS 7.x (7.1 and later), CentOS 6.x (6.5 and later)  
-* Unzip the `TREND-1.0-Ubuntu14.04.tar.gz` (The string `Ubuntu14.04` 
+* Unzip the `TREND-1.x-Ubuntu14.04.tar.gz` (The string `Ubuntu14.04` 
 can be any 
 other Linux distribution such as `RHEL7.1` or `Ubuntu16.04`) by 
 entering the command 
-  `tar -xzvf TREND-1.0-Ubuntu14.04.tar.gz` within a terminal shell.  
+  `tar -xzvf TREND-1.x-Ubuntu14.04.tar.gz` within a terminal shell.  
 * Enter `./install.script` within the terminal shell to add the current 
   TREND directory to the `PATH` environment variable. Three lines will be 
   added to `~/.bashrc`, starting with `#TREND path environment`.   
@@ -103,8 +107,8 @@ entering the command
   `tcsh` or `csh` environment, just add the following 
   lines to your `.cshrc` or `.tcshrc` files:  
   ```bash
-  set path = ($path ~/your_directory/TREND-1.0-CentOS6.5/CLI)
-  set path = ($path ~/your_directory/TREND-1.0-CentOS6.5/GUI)
+  set path = ($path ~/your_directory/TREND-1.x-CentOS6.5/CLI)
+  set path = ($path ~/your_directory/TREND-1.x-CentOS6.5/GUI)
   ```   
   Replace `your_directory` with the paretn directory name of the 
   TREND folder.  
@@ -112,8 +116,8 @@ entering the command
 #### Uninstalling or Moving
 
 * Run `uninstall.bat` in Windows or `uninstall.script` in OS X and Linux.    
-* Then delete the `TREND-1.0-Win` ,`TREND-1.0-macOS`, or 
-  `TREND-1.0-Ubuntu14.04` folder.  
+* Then delete the `TREND-1.x-Win` ,`TREND-1.x-macOS`, or 
+  `TREND-1.x-Ubuntu14.04` folder.  
 * To move the TREND folder to a new location, first uninstall it, move 
   the TREND foler to the new location, and install it again, thereby 
   overwriting the previously installed TREND executable files.  
